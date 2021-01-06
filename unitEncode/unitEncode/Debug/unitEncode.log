@@ -1,2 +1,6 @@
-﻿  test_en_sub3d_sub2.c
-  unitEncode.vcxproj -> C:\Users\liyang\Desktop\BISHE\vv\unitEncode\Debug\unitEncode.exe
+﻿  de_sub3d_sub2.c
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\de_sub3d_sub2.c(67): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\de_sub3d_sub2.c(72): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\de_sub3d_sub2.c(97): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\de_sub3d_sub2.c(132): warning C4018: “<”: 有符号/无符号不匹配
+  unitEncode.vcxproj -> C:\Users\liyang\Desktop\BISHE\signifVS\unitEncode\Debug\unitEncode.exe
