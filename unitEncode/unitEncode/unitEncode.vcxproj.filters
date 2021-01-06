@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\inc">
+      <UniqueIdentifier>{d43a923a-a4c9-4441-afc2-00a4dba18129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\src">
+      <UniqueIdentifier>{d13c5868-1bb0-471c-b89a-6207d5c65d10}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bin_add.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="de_Kside.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="de_KsideSub.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="de_KsideSub_n1s.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="de_r0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="de_r1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="de_runs_sep_sub.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_block3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_block3_n0s.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_block3_n1s.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_block5.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_block5_n0s.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_block5_n1s.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_stationary_source_leninvr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_stationary_source_lenr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_stationary_source_Nsym_lenr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_stationary_source_r_invr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="decode_stationary_source_sumr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="deSFcode.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="en_Kside.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="en_KsideSub.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="en_KsideSub_n1s.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="en_r0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="en_r1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="en_runs_sep_sub.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="encode_block_nrs.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="encode_block_nrs_lenres.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="encode_block3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="encode_block5.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="encode_stationary_source_bin.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="encode_stationary_source_cbook.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="encode_stationary_source_Nsym.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="encode_stationary_source_Nsym_sub.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="encode_stationary_source_r_invr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="find_thd.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Golomb0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GolombInv.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hist.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="KW_inversion_runs.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="len_bit_to_byte.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="separate_Bversion.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="separate_inv.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SFcode.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sum.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="thd_index_inv.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="the_index.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="en_2n_code_new.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_2n_code_sub.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_r_cr.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_en_z0.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_en_2n_code_new.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="encoding.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_sub3d_sub2_sub.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_z0.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="separate0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="de_z0.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_de_z0.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_en_2n_code_sub.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_2n_code_new.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_de_2n_code_new.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_2n_code_sub.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_2n_code_sub1.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_en_and_de_2n_code_new.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_z0_r0.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_en_z0_r0.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_z0_r0.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_zone_sub2.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_en_zone_sub2.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_runs_0seps.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_en_r_cr.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_runs_1sep.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="prob_est.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_zone_sub2.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_r_cr.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_runs_0seps.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_runs_1sep.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="sumBin.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_zone_new.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="find_thd_idx.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_runs_2seps.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_Kside_new.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="probility_estimation.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_zone_sub_new.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="k_criterion.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_runs_2sepsA.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_de_r_cr.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_zone_new.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_runs_2sepsA.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_Kside_new.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_runs_2seps.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_zone_sub_new.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="writeBin.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="en_sub3d_sub2.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_en_sub3d_sub2.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="find_thd4subs.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Separate.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_en_sub3d_sub2_sub.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="cr_test.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="find_the_idx_round.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_sub3d_sub2_sub.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_de_sub3d_sub2_sub.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="de_sub3d_sub2.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+    <ClCompile Include="test_de_sub3d_sub2.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="all.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="encoding.h">
+      <Filter>头文件\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="parameter_setting.h">
+      <Filter>头文件\inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

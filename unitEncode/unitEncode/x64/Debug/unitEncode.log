@@ -1,0 +1,236 @@
+﻿  bin_add.c
+  decode_block3.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_block3.c(16): warning C4101: “i”: 未引用的局部变量
+  decode_block3_n0s.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_block3_n0s.c(26): warning C4101: “nres”: 未引用的局部变量
+  decode_block3_n1s.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_block3_n1s.c(26): warning C4101: “nres”: 未引用的局部变量
+  decode_block5.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_block5.c(16): warning C4101: “i”: 未引用的局部变量
+  decode_block5_n0s.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_block5_n0s.c(27): warning C4101: “flg”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_block5_n0s.c(26): warning C4101: “nres”: 未引用的局部变量
+  decode_block5_n1s.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_block5_n1s.c(26): warning C4101: “nres”: 未引用的局部变量
+  decode_stationary_source_leninvr.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_stationary_source_leninvr.c(15): warning C4101: “i”: 未引用的局部变量
+  decode_stationary_source_lenr.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_stationary_source_lenr.c(17): warning C4101: “a”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_stationary_source_lenr.c(15): warning C4101: “i”: 未引用的局部变量
+  decode_stationary_source_Nsym_lenr.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_stationary_source_nsym_lenr.c(33): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_stationary_source_nsym_lenr.c(79): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_stationary_source_nsym_lenr.c(17): warning C4101: “a”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_stationary_source_nsym_lenr.c(15): warning C4101: “i”: 未引用的局部变量
+  decode_stationary_source_r_invr.c
+  decode_stationary_source_sumr.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_stationary_source_sumr.c(17): warning C4101: “a”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\decode_stationary_source_sumr.c(15): warning C4101: “i”: 未引用的局部变量
+  deSFcode.c
+  de_2n_code_new.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_2n_code_new.c(62): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_2n_code_new.c(66): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_2n_code_new.c(74): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_2n_code_new.c(86): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_2n_code_new.c(93): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_2n_code_new.c(166): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_2n_code_new.c(171): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_2n_code_new.c(265): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_2n_code_new.c(270): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_2n_code_new.c(292): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+  de_2n_code_sub.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_2n_code_sub.c(13): warning C4018: “<”: 有符号/无符号不匹配
+  de_2n_code_sub1.c
+  de_Kside.c
+  de_KsideSub.c
+  de_KsideSub_n1s.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_ksidesub_n1s.c(16): warning C4101: “lencbit”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_ksidesub_n1s.c(15): warning C4101: “lenc”: 未引用的局部变量
+  de_r0.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_r0.c(15): warning C4101: “i”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_r0.c(19): warning C4101: “lenc”: 未引用的局部变量
+  正在生成代码...
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\bin_add.c(41): warning C4716: “bin_add”: 必须返回一个值
+  正在编译...
+  de_r1.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_r1.c(11): warning C4101: “i”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_r1.c(17): warning C4101: “codebook”: 未引用的局部变量
+  de_runs_0seps.c
+  de_runs_1sep.c
+  de_runs_sep_sub.c
+  de_r_cr.c
+  de_z0.c
+  de_z0_r0.c
+  de_zone_sub2.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_zone_sub2.c(34): warning C4133: “函数”: 从“GOLINV *”到“Uint8_Dat *”的类型不兼容
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_zone_sub2.c(60): warning C4047: “函数”:“size_t”与“unsigned int *”的间接级别不同
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_zone_sub2.c(60): warning C4024: “calloc”: 形参和实参 1 的类型不同
+  encode_block3.c
+  encode_block5.c
+  encode_block_nrs.c
+  encode_block_nrs_lenres.c
+  encode_stationary_source_bin.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_bin.c(35): warning C4018: “>”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_bin.c(52): warning C4018: “>”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_bin.c(58): warning C4018: “<=”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_bin.c(61): warning C4018: “<=”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_bin.c(83): warning C4098: “encode_stationary_source_bin”:“void”函数返回值
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_bin.c(15): warning C4101: “j”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_bin.c(15): warning C4101: “n”: 未引用的局部变量
+  encode_stationary_source_cbook.c
+  encode_stationary_source_Nsym.c
+  encode_stationary_source_Nsym_sub.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_nsym_sub.c(107): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_nsym_sub.c(111): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_nsym_sub.c(115): warning C4018: “>”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_nsym_sub.c(159): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_nsym_sub.c(165): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_nsym_sub.c(169): warning C4018: “>”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_nsym_sub.c(175): warning C4018: “<=”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_nsym_sub.c(178): warning C4018: “<=”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_nsym_sub.c(24): warning C4101: “t”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\encode_stationary_source_nsym_sub.c(20): warning C4101: “n”: 未引用的局部变量
+  encode_stationary_source_r_invr.c
+  encoding.c
+  en_2n_code_new.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(56): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(61): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(70): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(133): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(142): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(219): warning C4133: “=”: 从“unsigned int *”到“unsigned char *”的类型不兼容
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(223): warning C4133: “=”: 从“unsigned int *”到“unsigned char *”的类型不兼容
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(225): warning C4133: “函数”: 从“Uint8_Dat *”到“Uint32_Dat *”的类型不兼容
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(225): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(228): warning C4133: “=”: 从“unsigned int *”到“unsigned char *”的类型不兼容
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(232): warning C4133: “=”: 从“unsigned int *”到“unsigned char *”的类型不兼容
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(234): warning C4133: “函数”: 从“Uint8_Dat *”到“Uint32_Dat *”的类型不兼容
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(234): warning C4244: “函数”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_new.c(263): warning C4018: “<”: 有符号/无符号不匹配
+  en_2n_code_sub.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_sub.c(21): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_2n_code_sub.c(33): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\de_r_cr.c(39): warning C4716: “de_r_cr”: 必须返回一个值
+  正在编译...
+  en_Kside.c
+  en_KsideSub.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_ksidesub.c(11): warning C4305: “初始化”: 从“double”到“float”截断
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_ksidesub.c(15): warning C4101: “e_cbook”: 未引用的局部变量
+  en_KsideSub_n1s.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_ksidesub_n1s.c(27): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_ksidesub_n1s.c(34): warning C4013: “bin_add”未定义；假设外部返回 int
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_ksidesub_n1s.c(88): warning C4305: “函数”: 从“double”到“float”截断
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_ksidesub_n1s.c(89): warning C4305: “函数”: 从“double”到“float”截断
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_ksidesub_n1s.c(16): warning C4101: “i”: 未引用的局部变量
+  en_r0.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_r0.c(61): warning C4013: “bin_add”未定义；假设外部返回 int
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_r0.c(23): warning C4305: “初始化”: 从“double”到“float”截断
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_r0.c(20): warning C4101: “x1”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_r0.c(20): warning C4101: “i”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_r0.c(29): warning C4101: “nrs”: 未引用的局部变量
+  en_r1.c
+  en_runs_0seps.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_runs_0seps.c(62): warning C4244: “函数”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_runs_0seps.c(74): warning C4244: “函数”: 从“int”转换到“float”，可能丢失数据
+  en_runs_1sep.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_runs_1sep.c(89): warning C4244: “函数”: 从“int”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_runs_1sep.c(152): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_runs_1sep.c(187): warning C4244: “函数”: 从“int”转换到“float”，可能丢失数据
+  en_runs_sep_sub.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_runs_sep_sub.c(25): warning C4554: “&”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_runs_sep_sub.c(12): warning C4101: “rem”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_runs_sep_sub.c(18): warning C4101: “sfc1”: 未引用的局部变量
+  en_r_cr.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_r_cr.c(57): warning C4554: “|”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+  en_sub3d_sub2_sub.c
+  en_z0.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_z0.c(19): warning C4018: “>”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_z0.c(21): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_z0.c(59): warning C4018: “<”: 有符号/无符号不匹配
+  en_z0_r0.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_z0_r0.c(28): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_z0_r0.c(76): warning C4244: “函数”: 从“int”转换到“float”，可能丢失数据
+  en_zone_new.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_new.c(17): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_new.c(21): warning C4133: “函数”: 从“int [25]”到“Uint32_Dat *”的类型不兼容
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_new.c(10): warning C4305: “初始化”: 从“double”到“float”截断
+  en_zone_sub2.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(19): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(21): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(32): warning C4305: “函数”: 从“double”到“float”截断
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(52): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(61): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(69): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(74): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(86): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(107): warning C4133: “=”: 从“unsigned int *”到“unsigned char *”的类型不兼容
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(109): warning C4133: “函数”: 从“Uint8_Dat *”到“Uint32_Dat *”的类型不兼容
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(118): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(130): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_zone_sub2.c(122): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  find_thd.c
+  find_thd_idx.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\find_thd_idx.c(8): warning C4028: 形参 3 与声明不同
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\find_thd_idx.c(10): warning C4018: “<”: 有符号/无符号不匹配
+  Golomb0.c
+  GolombInv.c
+  hist.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\hist.c(12): warning C4018: “<”: 有符号/无符号不匹配
+  KW_inversion_runs.c
+  正在生成代码...
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_runs_sep_sub.c(56): warning C4716: “en_runs_sep_sub”: 必须返回一个值
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\en_r1.c(89): warning C4716: “en_r1”: 必须返回一个值
+  正在编译...
+  K_Criterion.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\k_criterion.c(75): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\k_criterion.c(122): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\k_criterion.c(130): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\k_criterion.c(147): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\k_criterion.c(151): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\k_criterion.c(156): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\k_criterion.c(160): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\k_criterion.c(165): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\k_criterion.c(118): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  len_bit_to_byte.c
+  main.c
+  prob_est.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\prob_est.c(43): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  separate0.c
+  separate_Bversion.c
+  separate_inv.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\separate_inv.c(12): warning C4101: “m”: 未引用的局部变量
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\separate_inv.c(12): warning C4101: “n”: 未引用的局部变量
+  SFcode.c
+  sum.c
+  sumBin.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\sumbin.c(11): warning C4018: “<”: 有符号/无符号不匹配
+  test_de_2n_code_new.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_de_2n_code_new.c(64): warning C4018: “<”: 有符号/无符号不匹配
+  test_de_z0.c
+  test_en_2n_code_new.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_2n_code_new.c(22): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_2n_code_new.c(37): warning C4018: “<”: 有符号/无符号不匹配
+  test_en_2n_code_sub.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_2n_code_sub.c(24): warning C4018: “<”: 有符号/无符号不匹配
+  test_en_and_de_2n_code_new.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_and_de_2n_code_new.c(22): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_and_de_2n_code_new.c(37): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_and_de_2n_code_new.c(80): warning C4018: “<”: 有符号/无符号不匹配
+  test_en_r_cr.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_r_cr.c(28): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_r_cr.c(19): warning C4101: “rem”: 未引用的局部变量
+  test_en_z0.c
+  test_en_z0_r0.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_z0_r0.c(54): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_z0_r0.c(61): warning C4305: “函数”: 从“double”到“float”截断
+  test_en_zone_sub2.c
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_zone_sub2.c(28): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_zone_sub2.c(43): warning C4305: “函数”: 从“double”到“float”截断
+c:\users\liyang\desktop\bishe\vv\unitencode\unitencode\test_en_zone_sub2.c(19): warning C4101: “rem”: 未引用的局部变量
+  thd_index_inv.c
+  正在生成代码...
+  正在编译...
+  the_index.c
+  正在生成代码...
+  unitEncode.vcxproj -> C:\Users\liyang\Desktop\BISHE\vv\unitEncode\x64\Debug\unitEncode.exe
