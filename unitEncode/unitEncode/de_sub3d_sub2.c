@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <math.h>
 #include "all.h"
@@ -56,6 +57,11 @@ DE_S_SUB de_sub3d_sub2(uchar *bin, int len, int qctr, int lenbinbit)
 		cf.len = sub_array[i].z.len;
 		free(temp.dat);
 	}
+
+	//FILE* fp = fopen("cfC.txt", "wb");
+	//fwrite(cf.dat, sizeof(int), cf.len, fp);
+	//fclose(fp);
+
 	if (qctr == 1)
 	{
 		for (int i = 0; i < cf.len; i++)
@@ -92,8 +98,8 @@ DE_S_SUB de_sub3d_sub2(uchar *bin, int len, int qctr, int lenbinbit)
 		{
 			if (cf.dat[i] != 0)
 			{
-				ns++;
 				cf.dat[i] = (cf.dat[i]) * (sn.dat[ns]);
+				ns++;
 			}
 		}
 
