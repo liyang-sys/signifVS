@@ -25,9 +25,9 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		typ = 1;
 	}
 	en_r_cr(r, lB, nr, scr, scrc, pr, z);
-	//FILE* fp = fopen("encodeZThd3.txt", "wb");
-	//fwrite(bin, sizeof(unsigned char), (ptr / 8) + 1, fp);
-	//fclose(fp);
+	FILE* fp = fopen("encodeZThd3.txt", "wb");
+	fwrite(bin, sizeof(unsigned char), (ptr / 8) + 1, fp);
+	fclose(fp);
 	int thdh, thdq;
 	if (thd == 2)
 	{
@@ -705,7 +705,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			crTestCf1Copy.dat[i] = crTest.cf1.dat[i];
 		}
 		CR_TEST_RET crTest1 = cr_test(&crTestCf1Copy, thdt, &crTest.nc1);
-		free(crTestCf1Copy.dat);
+		//free(crTestCf1Copy.dat);
 
 		Uint32_Dat crTestCf2Copy;//调用之后数据会被改变，所以需要拷贝
 		crTestCf2Copy.len = crTest.cf2.len;
@@ -715,7 +715,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			crTestCf2Copy.dat[i] = crTest.cf2.dat[i];
 		}
 		CR_TEST_RET crTest2 = cr_test(&crTestCf2Copy, thdt, &crTest.nc2);
-		free(crTestCf2Copy.dat);
+		//free(crTestCf2Copy.dat);
 
 		CR_TEST_RET crTest3 = cr_test(&cf12, thdq, &nc12);
 
@@ -727,7 +727,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			crTest3Cf1Copy.dat[i] = crTest3.cf1.dat[i];
 		}
 		CR_TEST_RET crTest4 = cr_test(&crTest3Cf1Copy, thdt, &crTest3.nc1);
-		free(crTest3Cf1Copy.dat);
+		//free(crTest3Cf1Copy.dat);
 
 		Uint32_Dat crTest3Cf2Copy;//调用之后数据会被改变，所以需要拷贝
 		crTest3Cf2Copy.len = crTest3.cf2.len;
@@ -737,7 +737,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			crTest3Cf2Copy.dat[i] = crTest3.cf2.dat[i];
 		}
 		CR_TEST_RET crTest5 = cr_test(&crTest3Cf2Copy, thdt, &crTest3.nc2);
-		free(crTest3Cf2Copy.dat);
+		//free(crTest3Cf2Copy.dat);
 		if (crTest.sumcr > 12)
 		{
 			L2 = 1;
@@ -874,14 +874,14 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		free(z1Copy.dat);
 
 
-		//free(crTest1.cf1.dat);
+		free(crTest1.cf1.dat);
 		free(crTest1.cf2.dat);
 		free(crTest1.nc1.dat);
 		free(crTest1.nc2.dat);
 		free(crTest1.nr.dat);
 		free(crTest1.r.dat);
 
-		//free(crTest2.cf1.dat);
+		free(crTest2.cf1.dat);
 		free(crTest2.cf2.dat);
 		free(crTest2.nc1.dat);
 		free(crTest2.nc2.dat);
@@ -895,14 +895,14 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		free(crTest3.nr.dat);
 		free(crTest3.r.dat);
 
-		//free(crTest4.cf1.dat);
+		free(crTest4.cf1.dat);
 		free(crTest4.cf2.dat);
 		free(crTest4.nc1.dat);
 		free(crTest4.nc2.dat);
 		free(crTest4.nr.dat);
 		free(crTest4.r.dat);
 
-		//free(crTest5.cf1.dat);
+		free(crTest5.cf1.dat);
 		free(crTest5.cf2.dat);
 		free(crTest5.nc1.dat);
 		free(crTest5.nc2.dat);
@@ -1002,7 +1002,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			crTestCf1Copy.dat[i] = crTest.cf1.dat[i];
 		}
 		CR_TEST_RET crTest1 = cr_test(&crTestCf1Copy, thdt, &crTest.nc1);
-		free(crTestCf1Copy.dat);
+		//free(crTestCf1Copy.dat);
 
 		Uint32_Dat crTestCf2Copy;//调用之后数据会被改变，所以需要拷贝
 		crTestCf2Copy.len = crTest.cf2.len;
@@ -1012,7 +1012,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			crTestCf2Copy.dat[i] = crTest.cf2.dat[i];
 		}
 		CR_TEST_RET crTest2 = cr_test(&crTestCf2Copy, thdt, &crTest.nc2);
-		free(crTestCf2Copy.dat);
+		//free(crTestCf2Copy.dat);
 
 		CR_TEST_RET crTest3 = cr_test(&cf12, thdq, &nc12);
 
@@ -1024,7 +1024,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			crTest3Cf1Copy.dat[i] = crTest3.cf1.dat[i];
 		}
 		CR_TEST_RET crTest4 = cr_test(&crTest3Cf1Copy, thdt, &crTest3.nc1);
-		free(crTest3Cf1Copy.dat);
+		//free(crTest3Cf1Copy.dat);
 
 		Uint32_Dat crTest3Cf2Copy;//调用之后数据会被改变，所以需要拷贝
 		crTest3Cf2Copy.len = crTest3.cf2.len;
@@ -1034,7 +1034,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			crTest3Cf2Copy.dat[i] = crTest3.cf2.dat[i];
 		}
 		CR_TEST_RET crTest5 = cr_test(&crTest3Cf2Copy, thdt, &crTest3.nc2);
-		free(crTest3Cf2Copy.dat);
+		//free(crTest3Cf2Copy.dat);
 
 		if (crTest.sumcr > 12)
 		{
@@ -1092,7 +1092,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			{
 				//L3 = 1;
 				en_r_cr(&(crTest1.r), crTest1.lB, &(crTest1.nr), crTest1.sumcr, crTest1.sumcrc, crTest1.pr, &(crTest1.z));//bin_r3A
-				en_2n_code_new(&crTest.cf1, &crTest.nc1, typ3, thdt);//bin31
+				en_2n_code_new(&crTest1.cf1, &crTest1.nc1, typ3, thdt);//bin31
 				if (crTest2.sumcr > 12)
 				{
 					//L3 = 2;
@@ -1176,14 +1176,14 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		free(z1Copy.dat);
 
 
-		//free(crTest1.cf1.dat);
+		free(crTest1.cf1.dat);
 		free(crTest1.cf2.dat);
 		free(crTest1.nc1.dat);
 		free(crTest1.nc2.dat);
 		free(crTest1.nr.dat);
 		free(crTest1.r.dat);
 
-		//free(crTest2.cf1.dat);
+		free(crTest2.cf1.dat);
 		free(crTest2.cf2.dat);
 		free(crTest2.nc1.dat);
 		free(crTest2.nc2.dat);
@@ -1197,14 +1197,14 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		free(crTest3.nr.dat);
 		free(crTest3.r.dat);
 
-		//free(crTest4.cf1.dat);
+		free(crTest4.cf1.dat);
 		free(crTest4.cf2.dat);
 		free(crTest4.nc1.dat);
 		free(crTest4.nc2.dat);
 		free(crTest4.nr.dat);
 		free(crTest4.r.dat);
 
-		//free(crTest5.cf1.dat);
+		free(crTest5.cf1.dat);
 		free(crTest5.cf2.dat);
 		free(crTest5.nc1.dat);
 		free(crTest5.nc2.dat);
@@ -1311,7 +1311,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			crTestCf1Copy.dat[i] = crTest.cf1.dat[i];
 		}
 		CR_TEST_RET crTest1 = cr_test(&crTestCf1Copy, thdt, &crTest.nc1);
-		free(crTestCf1Copy.dat);
+		//free(crTestCf1Copy.dat);
 
 		Uint32_Dat crTestCf2Copy;//调用之后数据会被改变，所以需要拷贝
 		crTestCf2Copy.len = crTest.cf2.len;
@@ -1321,7 +1321,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			crTestCf2Copy.dat[i] = crTest.cf2.dat[i];
 		}
 		CR_TEST_RET crTest2 = cr_test(&crTestCf2Copy, thdt, &crTest.nc2);
-		free(crTestCf2Copy.dat);
+		//free(crTestCf2Copy.dat);
 
 		CR_TEST_RET crTest3 = cr_test(&cf12, thdq, &nc12);
 
@@ -1333,7 +1333,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			crTest3Cf1Copy.dat[i] = crTest3.cf1.dat[i];
 		}
 		CR_TEST_RET crTest4 = cr_test(&crTest3Cf1Copy, thdt, &crTest3.nc1);
-		free(crTest3Cf1Copy.dat);
+		//free(crTest3Cf1Copy.dat);
 
 		Uint32_Dat crTest3Cf2Copy;//调用之后数据会被改变，所以需要拷贝
 		crTest3Cf2Copy.len = crTest3.cf2.len;
@@ -1343,7 +1343,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			crTest3Cf2Copy.dat[i] = crTest3.cf2.dat[i];
 		}
 		CR_TEST_RET crTest5 = cr_test(&crTest3Cf2Copy, thdt, &crTest3.nc2);
-		free(crTest3Cf2Copy.dat);
+		//free(crTest3Cf2Copy.dat);
 
 		if (crTest.sumcr > 12)
 		{
@@ -1489,14 +1489,14 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		free(z1Copy.dat);
 
 
-		//free(crTest1.cf1.dat);
+		free(crTest1.cf1.dat);
 		free(crTest1.cf2.dat);
 		free(crTest1.nc1.dat);
 		free(crTest1.nc2.dat);
 		free(crTest1.nr.dat);
 		free(crTest1.r.dat);
 
-		//free(crTest2.cf1.dat);
+		free(crTest2.cf1.dat);
 		free(crTest2.cf2.dat);
 		free(crTest2.nc1.dat);
 		free(crTest2.nc2.dat);
@@ -1510,14 +1510,14 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		free(crTest3.nr.dat);
 		free(crTest3.r.dat);
 
-		//free(crTest4.cf1.dat);
+		free(crTest4.cf1.dat);
 		free(crTest4.cf2.dat);
 		free(crTest4.nc1.dat);
 		free(crTest4.nc2.dat);
 		free(crTest4.nr.dat);
 		free(crTest4.r.dat);
 
-		//free(crTest5.cf1.dat);
+		free(crTest5.cf1.dat);
 		free(crTest5.cf2.dat);
 		free(crTest5.nc1.dat);
 		free(crTest5.nc2.dat);

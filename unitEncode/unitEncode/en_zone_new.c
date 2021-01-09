@@ -164,7 +164,7 @@ void en_zone_new(Uint32_Dat*r, Uint32_Dat*nc)
 		idx = find_thd_idx(&ncw, p1, th);
 		int thd2 = th[idx];
 
-		SEP sep2 = separate0(rw.dat, thd2, rw.len, 0);
+		SEP sep2 = separate0(rw.dat, thd2, rw.len, 1);
 
 		Uint32_Dat nck2;
 		nck2.dat = calloc(thd2, sizeof(unsigned int));
@@ -349,10 +349,10 @@ void en_zone_new(Uint32_Dat*r, Uint32_Dat*nc)
 		//{
 		//	free(sep2.sep);
 		//}
-		if (sep2.rw != NULL)
-		{
-			free(sep2.rw);
-		}
+		//if (sep2.rw != NULL)
+		//{
+		//	free(sep2.rw);
+		//}
 		if (rs2.dat != NULL)
 		{
 			free(rs2.dat);

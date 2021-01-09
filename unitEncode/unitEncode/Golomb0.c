@@ -60,7 +60,8 @@ GOL Golomb0(uchar *z, int lenzbit)
 	}
 	gol1.lenr++;
 
-	gol1.lastBit = z[lenzbit >> 3] >> (7 - ((lenzbit - 1) & 7)) & 1;
+	//gol1.lastBit = z[lenzbit >> 3] >> (7 - ((lenzbit - 1) & 7)) & 1;
+	gol1.lastBit = z[(lenzbit - 1)>> 3] >> (7 - ((lenzbit - 1) & 7)) & 1; //ÐÞ¸ÄµÄ
 	if (gol1.lastBit > 0)  gol1.lenr--;
 	//printf("lastBit = %d\n", gol1.lastBit);
 
