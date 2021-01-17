@@ -17,10 +17,11 @@ typedef struct {
 KIR KW_inversion_runs (uint *r, int lenr);
 
 typedef struct {
-	uchar code;
+	uint code;
 	int lb;
 } SFC;
-SFC SFcode (uchar sym, uchar Nsym);
+//SFC SFcode (uchar sym, uchar Nsym);
+SFC SFcode(uint sym, uint Nsym);
 
 typedef struct {
 	uchar *z;

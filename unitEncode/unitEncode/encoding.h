@@ -81,5 +81,7 @@ void test_en_sub3d_sub2();
 void test_en_sub3d_sub2_sub();
 void test_de_sub3d_sub2_sub();
 void test_de_sub3d_sub2();
+void test_en_zone_sub_new();
+void test_SFcode();
 
 #endif /* __ENCODING_H */

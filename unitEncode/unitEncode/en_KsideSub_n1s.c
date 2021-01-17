@@ -41,12 +41,13 @@ void en_KsideSub_n1s (uchar *z, int lenzbit, int lenr)
         bin[ptr >> 3] |= 1 << (7 - x);
         ptr++; x++; x &= 7;
         ebnl1 = encode_block_nrs_lenres (z, lenzbit, 3);
-        sfc1 = SFcode(ebnl1.nrs + 1, 3); lb = sfc1.lb; code = sfc1.code;
-        rem.a = code;
-        rem.a = rem.a << (16 - x - lb);
-        bin[ptr >> 3] |= rem.b[1];
-        bin[(ptr >> 3) + 1] |= rem.b[0];
-        ptr += lb; x += lb; x &= 7;
+        //sfc1 = SFcode(ebnl1.nrs + 1, 3); lb = sfc1.lb; code = sfc1.code;
+		SFcode(ebnl1.nrs + 1, 3);
+        //rem.a = code;
+        //rem.a = rem.a << (16 - x - lb);
+        //bin[ptr >> 3] |= rem.b[1];
+        //bin[(ptr >> 3) + 1] |= rem.b[0];
+        //ptr += lb; x += lb; x &= 7;
         encode_block3 (z, lenzbit);
     }
     else if (wuns > (lenzbit * f2))
@@ -56,12 +57,13 @@ void en_KsideSub_n1s (uchar *z, int lenzbit, int lenr)
         bin[ptr >> 3] |= 1 << (7 - x);
         ptr += 2; x += 2; x &= 7;
         ebnl1 = encode_block_nrs_lenres (z, lenzbit, 5);
-        sfc1 = SFcode (ebnl1.nrs + 1, 5); lb = sfc1.lb; code = sfc1.code;
-        rem.a = code;
-        rem.a = rem.a << (16 - x - lb);
-        bin[ptr >> 3] |= rem.b[1];
-        bin[(ptr >> 3) + 1] |= rem.b[0];
-        ptr += lb; x += lb; x &= 7;
+        //sfc1 = SFcode (ebnl1.nrs + 1, 5); lb = sfc1.lb; code = sfc1.code;
+		SFcode(ebnl1.nrs + 1, 5);
+        //rem.a = code;
+        //rem.a = rem.a << (16 - x - lb);
+        //bin[ptr >> 3] |= rem.b[1];
+        //bin[(ptr >> 3) + 1] |= rem.b[0];
+        //ptr += lb; x += lb; x &= 7;
         if ((ebnl1.lenres > 3) && (ebnl1.nrs == 1))
         {
             flag = 1;

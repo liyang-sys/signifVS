@@ -78,26 +78,26 @@ void en_runs_1sep(Uint32_Dat* r, float p, unsigned char cbook, int lenz, SEP* se
 
 
 			/* codebook */
-			sfc1 = SFcode(essc1.codebook + 1, 5);
-			x = ptr & 7;
-			rem.a = sfc1.code;
-			rem.a = rem.a << (16 - x - sfc1.lb);
-			bin[ptr >> 3] |= rem.b[1];
-			bin[(ptr >> 3) + 1] |= rem.b[0];
-			ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+			SFcode(essc1.codebook + 1, 5);
+			//x = ptr & 7;
+			//rem.a = sfc1.code;
+			//rem.a = rem.a << (16 - x - sfc1.lb);
+			//bin[ptr >> 3] |= rem.b[1];
+			//bin[(ptr >> 3) + 1] |= rem.b[0];
+			//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 			/* bin */
 			encode_stationary_source_bin(gol.r, gol.lenr, essc1.codebook, essc1.k, essc1.m, essc1.m1, essc1.m2, essc1.cls);
 
 		}
 		else {
 			/* codebook */
-			sfc1 = SFcode((int)gol.p + 1, 5);
-			x = ptr & 7;
-			rem.a = sfc1.code;
-			rem.a = rem.a << (16 - x - sfc1.lb);
-			bin[ptr >> 3] |= rem.b[1];
-			bin[(ptr >> 3) + 1] |= rem.b[0];
-			ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+			SFcode((int)gol.p + 1, 5);
+			//x = ptr & 7;
+			//rem.a = sfc1.code;
+			//rem.a = rem.a << (16 - x - sfc1.lb);
+			//bin[ptr >> 3] |= rem.b[1];
+			//bin[(ptr >> 3) + 1] |= rem.b[0];
+			//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 			/* bin */
 			encode_stationary_source_bin(gol.r, gol.lenr, gol.p, 0, 0, 0, 0, 0);
 		}
@@ -168,23 +168,23 @@ void en_runs_1sep(Uint32_Dat* r, float p, unsigned char cbook, int lenz, SEP* se
 			essc1 = encode_stationary_source_cbook(pw);
 			/* codebook */
 			if (essc1.codebook > 5) {
-				x = ptr & 7;
-				sfc1 = SFcode(6, 6);
-				rem.a = sfc1.code;
-				rem.a = rem.a << (16 - x - sfc1.lb);
-				bin[ptr >> 3] |= rem.b[1];
-				bin[(ptr >> 3) + 1] |= rem.b[0];
-				ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+				//x = ptr & 7;
+				SFcode(6, 6);
+				//rem.a = sfc1.code;
+				//rem.a = rem.a << (16 - x - sfc1.lb);
+				//bin[ptr >> 3] |= rem.b[1];
+				//bin[(ptr >> 3) + 1] |= rem.b[0];
+				//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 				encode_stationary_source_bin(r->dat, r->len, 5, 0, 0, 0, 0, 0);
 			}
 			else {
-				x = ptr & 7;
-				sfc1 = SFcode(essc1.codebook + 1, 6);
-				rem.a = sfc1.code;
-				rem.a = rem.a << (16 - x - sfc1.lb);
-				bin[ptr >> 3] |= rem.b[1];
-				bin[(ptr >> 3) + 1] |= rem.b[0];
-				ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+				//x = ptr & 7;
+				SFcode(essc1.codebook + 1, 6);
+				//rem.a = sfc1.code;
+				//rem.a = rem.a << (16 - x - sfc1.lb);
+				//bin[ptr >> 3] |= rem.b[1];
+				//bin[(ptr >> 3) + 1] |= rem.b[0];
+				//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 				/* bin */
 				encode_stationary_source_bin(r->dat, r->len, essc1.codebook, essc1.k, essc1.m, essc1.m1, essc1.m2, essc1.cls);
 			}
@@ -192,15 +192,15 @@ void en_runs_1sep(Uint32_Dat* r, float p, unsigned char cbook, int lenz, SEP* se
 		else {
 			/* codebook */
 			if (pw > 5) pw = 5;
-			x = ptr & 7;
-			sfc1 = SFcode((int)pw + 1, 6);
-			rem.a = sfc1.code;
-			rem.a = rem.a << (16 - x - sfc1.lb);
-			bin[ptr >> 3] |= rem.b[1];
-			bin[(ptr >> 3) + 1] |= rem.b[0];
-			ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+			//x = ptr & 7;
+			SFcode((int)pw + 1, 6);
+			//rem.a = sfc1.code;
+			//rem.a = rem.a << (16 - x - sfc1.lb);
+			//bin[ptr >> 3] |= rem.b[1];
+			//bin[(ptr >> 3) + 1] |= rem.b[0];
+			//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 			/* bin */
-			encode_stationary_source_bin(r->dat, r->len, pw, 0, 0, 0, 0, 0);
+			encode_stationary_source_bin(r->dat, r->len, pw, 0, 0, 0, 0, 0);//¿ÉÄÜÓÐbug
 		}
 
 		sep->sep = 0;

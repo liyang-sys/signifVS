@@ -41,21 +41,21 @@ int en_r1 (uint *r, float p, int lenr, int *n, int on_off)
 	the1 = the_index (thd);
 	thd = the1.thd;
 	idx = the1.idx;
-	sfc1 = SFcode (idx, 40);
+	SFcode (idx, 40);
     x = ptr & 7;
 
 
-    /* 将这段编码移动到最前面 */
-    rem.a = sfc1.code;
-    rem.a = rem.a << (16 - x - sfc1.lb);
+    ///* 将这段编码移动到最前面 */
+    //rem.a = sfc1.code;
+    //rem.a = rem.a << (16 - x - sfc1.lb);
 
-    bin[ptr >> 3] |= rem.b[1];
-    bin[(ptr >> 3) + 1] |= rem.b[0];
+    //bin[ptr >> 3] |= rem.b[1];
+    //bin[(ptr >> 3) + 1] |= rem.b[0];
 
-    /* 指针偏移，位数偏移，位数限制 */
-    ptr += sfc1.lb;
-    x += sfc1.lb;
-    x &= 7;
+    ///* 指针偏移，位数偏移，位数限制 */
+    //ptr += sfc1.lb;
+    //x += sfc1.lb;
+    //x &= 7;
 
 	sep1 = separate0 (r, thd, lenr, 1); ///rk存放在r里面
 
@@ -74,13 +74,13 @@ int en_r1 (uint *r, float p, int lenr, int *n, int on_off)
 
     encode_stationary_source_bin (&gol1.lenr, 1, 20, 0, 0, 0, 0, 0); ///biny=[biny bin_lenrs]
     essc1 = encode_stationary_source_cbook (gol1.p);
-    sfc1 = SFcode ((essc1.codebook + 1), 5);
-    x = ptr & 7;
-    rem.a = sfc1.code; ///biny=[biny codebook]
-    rem.a = rem.a << (16 - x - sfc1.lb);
-    bin[ptr >> 3] |= rem.b[1];
-    bin[(ptr >> 3) + 1] |= rem.b[0];
-    ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+    SFcode ((essc1.codebook + 1), 5);
+    //x = ptr & 7;
+    //rem.a = sfc1.code; ///biny=[biny codebook]
+    //rem.a = rem.a << (16 - x - sfc1.lb);
+    //bin[ptr >> 3] |= rem.b[1];
+    //bin[(ptr >> 3) + 1] |= rem.b[0];
+    //ptr += sfc1.lb; x += sfc1.lb; x &= 7;
     encode_stationary_source_bin (gol1.r, gol1.lenr, gol1.p, essc1.k, essc1.m, essc1.m1, essc1.m2, essc1.cls); ///biny=[biny rs]
 
     /************ encoding rk and rw ************/

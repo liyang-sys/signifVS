@@ -51,25 +51,25 @@ void en_runs_0seps(Uint8_Dat* sep, unsigned char cbook)
 		if (essc1.codebook > 9) {
 			/* codebook */
 			essc1.codebook = 9;
-			sfc1 = SFcode(essc1.codebook + 1, 10);
-			x = ptr & 7;
-			rem.a = sfc1.code;
-			rem.a = rem.a << (16 - x - sfc1.lb);
-			bin[ptr >> 3] |= rem.b[1];
-			bin[(ptr >> 3) + 1] |= rem.b[0];
-			ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+			SFcode(essc1.codebook + 1, 10);
+			//x = ptr & 7;
+			//rem.a = sfc1.code;
+			//rem.a = rem.a << (16 - x - sfc1.lb);
+			//bin[ptr >> 3] |= rem.b[1];
+			//bin[(ptr >> 3) + 1] |= rem.b[0];
+			//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 			/* bin */
 			encode_stationary_source_bin(gol.r, gol.lenr, essc1.codebook, 0, 0, 0, 0, 0);
 		}
 		else {
 			/* codebook */
-			sfc1 = SFcode(essc1.codebook + 1, 10);
-			x = ptr & 7;
-			rem.a = sfc1.code;
-			rem.a = rem.a << (16 - x - sfc1.lb);
-			bin[ptr >> 3] |= rem.b[1];
-			bin[(ptr >> 3) + 1] |= rem.b[0];
-			ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+			SFcode(essc1.codebook + 1, 10);
+			//x = ptr & 7;
+			//rem.a = sfc1.code;
+			//rem.a = rem.a << (16 - x - sfc1.lb);
+			//bin[ptr >> 3] |= rem.b[1];
+			//bin[(ptr >> 3) + 1] |= rem.b[0];
+			//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 			/* bin */
 			encode_stationary_source_bin(gol.r, gol.lenr, essc1.codebook, essc1.k, essc1.m, essc1.m1, essc1.m2, essc1.cls);
 		}
@@ -77,13 +77,13 @@ void en_runs_0seps(Uint8_Dat* sep, unsigned char cbook)
 	else {
 		/* codebook */
 		if (gol.p > 9) gol.p = 9;
-		sfc1 = SFcode((int)gol.p + 1, 10);
-		x = ptr & 7;
-		rem.a = sfc1.code;
-		rem.a = rem.a << (16 - x - sfc1.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+		SFcode((int)gol.p + 1, 10);
+		//x = ptr & 7;
+		//rem.a = sfc1.code;
+		//rem.a = rem.a << (16 - x - sfc1.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 		/* bin */
 		encode_stationary_source_bin(gol.r, gol.lenr, gol.p, 0, 0, 0, 0, 0);
 	}

@@ -17,12 +17,12 @@ void en_z0_r0(Uint8_Dat* z, Uint32_Dat* runs,int lastBit,int wuns,float p)//wuns
 	int binBytePos = ptr & 7;
 	if (wuns >= (z->len) *f0)
 	{
-		SFC sfc = SFcode(1, 36);
-		rem.a = sfc.code;
-		rem.a = rem.a << (16 - binBytePos - sfc.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc.lb; binBytePos += sfc.lb; binBytePos &= 7;
+		SFcode(1, 36);
+		//rem.a = sfc.code;
+		//rem.a = rem.a << (16 - binBytePos - sfc.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc.lb; binBytePos += sfc.lb; binBytePos &= 7;
 
 		int t1, t0, t;
 		for (int i = 0; i < z->len; i++) {   //copyÅíÇ°Ê¦ÐÖµÄ
@@ -35,23 +35,23 @@ void en_z0_r0(Uint8_Dat* z, Uint32_Dat* runs,int lastBit,int wuns,float p)//wuns
 	}
 	else if (wuns > (z->len) *f1)
 	{
-		SFC sfc = SFcode(2, 36);
-		rem.a = sfc.code;
-		rem.a = rem.a << (16 - binBytePos - sfc.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc.lb; binBytePos += sfc.lb; binBytePos &= 7;
+		SFcode(2, 36);
+		//rem.a = sfc.code;
+		//rem.a = rem.a << (16 - binBytePos - sfc.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc.lb; binBytePos += sfc.lb; binBytePos &= 7;
 
 		encode_block3(z->dat, z->len);
 	}
 	else if (wuns > (z->len) *f2)
 	{
-		SFC sfc = SFcode(3, 36);
-		rem.a = sfc.code;
-		rem.a = rem.a << (16 - binBytePos - sfc.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc.lb; binBytePos += sfc.lb; binBytePos &= 7;
+		SFcode(3, 36);
+		//rem.a = sfc.code;
+		//rem.a = rem.a << (16 - binBytePos - sfc.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc.lb; binBytePos += sfc.lb; binBytePos &= 7;
 
 		encode_block5(z->dat, z->len);
 
@@ -59,12 +59,12 @@ void en_z0_r0(Uint8_Dat* z, Uint32_Dat* runs,int lastBit,int wuns,float p)//wuns
 	else
 	{
 		ESSC essc = encode_stationary_source_cbook(p);
-		SFC sfc = SFcode(essc.codebook +4, 36);
-		rem.a = sfc.code;
-		rem.a = rem.a << (16 - binBytePos - sfc.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc.lb; binBytePos += sfc.lb; binBytePos &= 7;
+		SFcode(essc.codebook +4, 36);
+		//rem.a = sfc.code;
+		//rem.a = rem.a << (16 - binBytePos - sfc.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc.lb; binBytePos += sfc.lb; binBytePos &= 7;
 
 		rem.a = lastBit;//±àlastbit
 		rem.a = rem.a << (15 - binBytePos);

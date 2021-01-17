@@ -267,13 +267,13 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			CR_TEST_RET crTest1 = cr_test(&cf12, thdq, &nc12);
 			if (crTest1.sumcr > 12)
 			{
-				SFC sfc1 = SFcode(3, 3);
-				binBytePos = ptr & 7;
-				rem.a = sfc1.code;
-				rem.a = rem.a << (16 - binBytePos - sfc1.lb);
-				bin[ptr >> 3] |= rem.b[1];
-				bin[(ptr >> 3) + 1] |= rem.b[0];
-				ptr += sfc1.lb;
+				SFcode(3, 3);
+				//binBytePos = ptr & 7;
+				//rem.a = sfc1.code;
+				//rem.a = rem.a << (16 - binBytePos - sfc1.lb);
+				//bin[ptr >> 3] |= rem.b[1];
+				//bin[(ptr >> 3) + 1] |= rem.b[0];
+				//ptr += sfc1.lb;
 
 				en_r_cr(&r1, lB1, &nr1, scr1, (float)scrc1, pr, &z1Copy);//binz1
 				en_r_cr(&(crTest.r), crTest.lB, &(crTest.nr), crTest.sumcr, crTest.sumcrc, crTest.pr, &(crTest.z));//bin11
@@ -281,13 +281,13 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			}
 			else
 			{
-				SFC sfc1 = SFcode(2, 3);
-				binBytePos = ptr & 7;
-				rem.a = sfc1.code;
-				rem.a = rem.a << (16 - binBytePos - sfc1.lb);
-				bin[ptr >> 3] |= rem.b[1];
-				bin[(ptr >> 3) + 1] |= rem.b[0];
-				ptr += sfc1.lb;
+				SFcode(2, 3);
+				//binBytePos = ptr & 7;
+				//rem.a = sfc1.code;
+				//rem.a = rem.a << (16 - binBytePos - sfc1.lb);
+				//bin[ptr >> 3] |= rem.b[1];
+				//bin[(ptr >> 3) + 1] |= rem.b[0];
+				//ptr += sfc1.lb;
 
 				en_r_cr(&r1, lB1, &nr1, scr1, (float)scrc1, pr, &z1Copy);//binz1
 				en_r_cr(&(crTest.r), crTest.lB, &(crTest.nr), crTest.sumcr, crTest.sumcrc, crTest.pr, &(crTest.z));//bin11
@@ -302,13 +302,13 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		}
 		else
 		{
-			SFC sfc1 = SFcode(1, 3);
-			binBytePos = ptr & 7;
-			rem.a = sfc1.code;
-			rem.a = rem.a << (16 - binBytePos - sfc1.lb);
-			bin[ptr >> 3] |= rem.b[1];
-			bin[(ptr >> 3) + 1] |= rem.b[0];
-			ptr += sfc1.lb;
+			SFcode(1, 3);
+			//binBytePos = ptr & 7;
+			//rem.a = sfc1.code;
+			//rem.a = rem.a << (16 - binBytePos - sfc1.lb);
+			//bin[ptr >> 3] |= rem.b[1];
+			//bin[(ptr >> 3) + 1] |= rem.b[0];
+			//ptr += sfc1.lb;
 
 			en_r_cr(&r1, lB1, &nr1, scr1, (float)scrc1, pr, &z1Copy);//binz1
 			en_2n_code_new(&cf11Copy, &nc11, typ, thdh);//bin11
@@ -425,7 +425,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 				crTestCf1Copy.dat[i] = crTest.cf1.dat[i];
 			}
 			CR_TEST_RET crTest1 = cr_test(&crTestCf1Copy, thdt, &crTest.nc1);
-			free(crTestCf1Copy.dat);
+			//free(crTestCf1Copy.dat);
 
 			//CR_TEST_RET crTest1 = cr_test(&crTest.cf1, thdt, &crTest.nc1);
 			if (crTest1.sumcr > 12)
@@ -445,27 +445,27 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 					crTest2Cf1Copy.dat[i] = crTest2.cf1.dat[i];
 				}
 				CR_TEST_RET crTest3 = cr_test(&crTest2Cf1Copy, thdt, &crTest2.nc1);
-				free(crTestCf1Copy.dat);
+				//free(crTest2Cf1Copy.dat);
 
 				//CR_TEST_RET crTest3 = cr_test(&crTest2.cf1, thdt, &crTest2.nc1);
 				if ((crTest3.sumcr > 16) && (L3 == 1))
 				{
 					L3 = 2;
-					SFC sfc1 = SFcode(L2 + 1, 3);
-					binBytePos = ptr & 7;
-					rem.a = sfc1.code;
-					rem.a = rem.a << (16 - binBytePos - sfc1.lb);
-					bin[ptr >> 3] |= rem.b[1];
-					bin[(ptr >> 3) + 1] |= rem.b[0];
-					ptr += sfc1.lb;
+					SFcode(L2 + 1, 3);
+					//binBytePos = ptr & 7;
+					//rem.a = sfc1.code;
+					//rem.a = rem.a << (16 - binBytePos - sfc1.lb);
+					//bin[ptr >> 3] |= rem.b[1];
+					//bin[(ptr >> 3) + 1] |= rem.b[0];
+					//ptr += sfc1.lb;
 
-					SFC sfc2 = SFcode(L3 + 1, 3);
-					binBytePos = ptr & 7;
-					rem.a = sfc2.code;
-					rem.a = rem.a << (16 - binBytePos - sfc2.lb);
-					bin[ptr >> 3] |= rem.b[1];
-					bin[(ptr >> 3) + 1] |= rem.b[0];
-					ptr += sfc2.lb;
+					SFcode(L3 + 1, 3);
+					//binBytePos = ptr & 7;
+					//rem.a = sfc2.code;
+					//rem.a = rem.a << (16 - binBytePos - sfc2.lb);
+					//bin[ptr >> 3] |= rem.b[1];
+					//bin[(ptr >> 3) + 1] |= rem.b[0];
+					//ptr += sfc2.lb;
 
 					en_r_cr(&r1, lB1, &nr1, scr1, (float)scrc1, pr, &z1Copy);//binz1
 					en_r_cr(&(crTest.r), crTest.lB, &(crTest.nr), crTest.sumcr, crTest.sumcrc, crTest.pr, &(crTest.z));//bin_r2A
@@ -483,21 +483,21 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 				}
 				else
 				{
-					SFC sfc1 = SFcode(L2 + 1, 3);
-					binBytePos = ptr & 7;
-					rem.a = sfc1.code;
-					rem.a = rem.a << (16 - binBytePos - sfc1.lb);
-					bin[ptr >> 3] |= rem.b[1];
-					bin[(ptr >> 3) + 1] |= rem.b[0];
-					ptr += sfc1.lb;
+					SFcode(L2 + 1, 3);
+					//binBytePos = ptr & 7;
+					//rem.a = sfc1.code;
+					//rem.a = rem.a << (16 - binBytePos - sfc1.lb);
+					//bin[ptr >> 3] |= rem.b[1];
+					//bin[(ptr >> 3) + 1] |= rem.b[0];
+					//ptr += sfc1.lb;
 
-					SFC sfc2 = SFcode(L3 + 1, 3);
-					binBytePos = ptr & 7;
-					rem.a = sfc2.code;
-					rem.a = rem.a << (16 - binBytePos - sfc2.lb);
-					bin[ptr >> 3] |= rem.b[1];
-					bin[(ptr >> 3) + 1] |= rem.b[0];
-					ptr += sfc2.lb;
+					SFcode(L3 + 1, 3);
+					//binBytePos = ptr & 7;
+					//rem.a = sfc2.code;
+					//rem.a = rem.a << (16 - binBytePos - sfc2.lb);
+					//bin[ptr >> 3] |= rem.b[1];
+					//bin[(ptr >> 3) + 1] |= rem.b[0];
+					//ptr += sfc2.lb;
 
 					en_r_cr(&r1, lB1, &nr1, scr1, (float)scrc1, pr, &z1Copy);//binz1
 					en_r_cr(&(crTest.r), crTest.lB, &(crTest.nr), crTest.sumcr, crTest.sumcrc, crTest.pr, &(crTest.z));//bin_r2A
@@ -512,7 +512,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 					en_r_cr(&(crTest2.r), crTest2.lB, &(crTest2.nr), crTest2.sumcr, crTest2.sumcrc, crTest2.pr, &(crTest2.z));//bin_r2B
 					en_2n_code_new(&crTest2.cf1, &crTest2.nc1, typ2, thdq);//bin23
 				}
-				//free(crTest3.cf1.dat);
+				free(crTest3.cf1.dat);
 				free(crTest3.cf2.dat);
 				free(crTest3.nc1.dat);
 				free(crTest3.nc2.dat);
@@ -521,21 +521,21 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			}
 			else
 			{
-				SFC sfc1 = SFcode(L2 + 1, 3);
-				binBytePos = ptr & 7;
-				rem.a = sfc1.code;
-				rem.a = rem.a << (16 - binBytePos - sfc1.lb);
-				bin[ptr >> 3] |= rem.b[1];
-				bin[(ptr >> 3) + 1] |= rem.b[0];
-				ptr += sfc1.lb;
+				SFcode(L2 + 1, 3);
+				//binBytePos = ptr & 7;
+				//rem.a = sfc1.code;
+				//rem.a = rem.a << (16 - binBytePos - sfc1.lb);
+				//bin[ptr >> 3] |= rem.b[1];
+				//bin[(ptr >> 3) + 1] |= rem.b[0];
+				//ptr += sfc1.lb;
 
-				SFC sfc2 = SFcode(L3 + 1, 3);
-				binBytePos = ptr & 7;
-				rem.a = sfc2.code;
-				rem.a = rem.a << (16 - binBytePos - sfc2.lb);
-				bin[ptr >> 3] |= rem.b[1];
-				bin[(ptr >> 3) + 1] |= rem.b[0];
-				ptr += sfc2.lb;
+				SFcode(L3 + 1, 3);
+				//binBytePos = ptr & 7;
+				//rem.a = sfc2.code;
+				//rem.a = rem.a << (16 - binBytePos - sfc2.lb);
+				//bin[ptr >> 3] |= rem.b[1];
+				//bin[(ptr >> 3) + 1] |= rem.b[0];
+				//ptr += sfc2.lb;
 
 				en_r_cr(&r1, lB1, &nr1, scr1, (float)scrc1, pr, &z1Copy);//binz1
 				en_r_cr(&(crTest.r), crTest.lB, &(crTest.nr), crTest.sumcr, crTest.sumcrc, crTest.pr, &(crTest.z));//bin_r2A
@@ -555,14 +555,14 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 				en_2n_code_new(&cf12Copy, &nc12, typ, thdh);//bin12
 			}
 
-			//free(crTest1.cf1.dat);
+			free(crTest1.cf1.dat);
 			free(crTest1.cf2.dat);
 			free(crTest1.nc1.dat);
 			free(crTest1.nc2.dat);
 			free(crTest1.nr.dat);
 			free(crTest1.r.dat);
 
-			//free(crTest2.cf1.dat);
+			free(crTest2.cf1.dat);
 			free(crTest2.cf2.dat);
 			free(crTest2.nc1.dat);
 			free(crTest2.nc2.dat);
@@ -571,21 +571,21 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		}
 		else
 		{
-			SFC sfc1 = SFcode(L2 + 1, 3);
-			binBytePos = ptr & 7;
-			rem.a = sfc1.code;
-			rem.a = rem.a << (16 - binBytePos - sfc1.lb);
-			bin[ptr >> 3] |= rem.b[1];
-			bin[(ptr >> 3) + 1] |= rem.b[0];
-			ptr += sfc1.lb;
+			SFcode(L2 + 1, 3);
+			//binBytePos = ptr & 7;
+			//rem.a = sfc1.code;
+			//rem.a = rem.a << (16 - binBytePos - sfc1.lb);
+			//bin[ptr >> 3] |= rem.b[1];
+			//bin[(ptr >> 3) + 1] |= rem.b[0];
+			//ptr += sfc1.lb;
 
-			SFC sfc2 = SFcode(L3 + 1, 3);
-			binBytePos = ptr & 7;
-			rem.a = sfc2.code;
-			rem.a = rem.a << (16 - binBytePos - sfc2.lb);
-			bin[ptr >> 3] |= rem.b[1];
-			bin[(ptr >> 3) + 1] |= rem.b[0];
-			ptr += sfc2.lb;
+			SFcode(L3 + 1, 3);
+			//binBytePos = ptr & 7;
+			//rem.a = sfc2.code;
+			//rem.a = rem.a << (16 - binBytePos - sfc2.lb);
+			//bin[ptr >> 3] |= rem.b[1];
+			//bin[(ptr >> 3) + 1] |= rem.b[0];
+			//ptr += sfc2.lb;
 
 			en_r_cr(&r1, lB1, &nr1, scr1, (float)scrc1, pr, &z1Copy);//binz1
 			en_2n_code_new(&cf11Copy, &nc11, typ, thdh);//bin11
@@ -593,7 +593,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		}
 
 		free(sepCfk.sep);
-		free(sepCfk.rw);
+		//free(sepCfk.rw);
 		free(crTest.cf1.dat);
 		free(crTest.cf2.dat);
 		free(crTest.nc1.dat);
@@ -768,21 +768,21 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			}
 		}
 
-		SFC sfc1 = SFcode(L2 + 1, 3);
-		binBytePos = ptr & 7;
-		rem.a = sfc1.code;
-		rem.a = rem.a << (16 - binBytePos - sfc1.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc1.lb;
+		SFcode(L2 + 1, 3);
+		//binBytePos = ptr & 7;
+		//rem.a = sfc1.code;
+		//rem.a = rem.a << (16 - binBytePos - sfc1.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc1.lb;
 
-		SFC sfc2 = SFcode(L3 + 1, 5);
-		binBytePos = ptr & 7;
-		rem.a = sfc2.code;
-		rem.a = rem.a << (16 - binBytePos - sfc2.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc2.lb;
+		SFcode(L3 + 1, 5);
+		//binBytePos = ptr & 7;
+		//rem.a = sfc2.code;
+		//rem.a = rem.a << (16 - binBytePos - sfc2.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc2.lb;
 
 		en_r_cr(&r1, lB1, &nr1, scr1, (float)scrc1, pr, &z1Copy);//binz1
 
@@ -1066,21 +1066,21 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			}
 		}
 
-		SFC sfc1 = SFcode(L2 + 1, 3);
-		binBytePos = ptr & 7;
-		rem.a = sfc1.code;
-		rem.a = rem.a << (16 - binBytePos - sfc1.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc1.lb;
+		SFcode(L2 + 1, 3);
+		//binBytePos = ptr & 7;
+		//rem.a = sfc1.code;
+		//rem.a = rem.a << (16 - binBytePos - sfc1.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc1.lb;
 
-		SFC sfc2 = SFcode(L3 + 1, 5);
-		binBytePos = ptr & 7;
-		rem.a = sfc2.code;
-		rem.a = rem.a << (16 - binBytePos - sfc2.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc2.lb;
+		SFcode(L3 + 1, 5);
+		//binBytePos = ptr & 7;
+		//rem.a = sfc2.code;
+		//rem.a = rem.a << (16 - binBytePos - sfc2.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc2.lb;
 
 		en_r_cr(&r1, lB1, &nr1, scr1, (float)scrc1, pr, &z1Copy);//binz1
 
@@ -1375,21 +1375,21 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			}
 		}
 
-		SFC sfc1 = SFcode(L2 + 1, 3);
-		binBytePos = ptr & 7;
-		rem.a = sfc1.code;
-		rem.a = rem.a << (16 - binBytePos - sfc1.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc1.lb;
+		SFcode(L2 + 1, 3);
+		//binBytePos = ptr & 7;
+		//rem.a = sfc1.code;
+		//rem.a = rem.a << (16 - binBytePos - sfc1.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc1.lb;
 
-		SFC sfc2 = SFcode(L3 + 1, 5);
-		binBytePos = ptr & 7;
-		rem.a = sfc2.code;
-		rem.a = rem.a << (16 - binBytePos - sfc2.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc2.lb;
+		SFcode(L3 + 1, 5);
+		//binBytePos = ptr & 7;
+		//rem.a = sfc2.code;
+		//rem.a = rem.a << (16 - binBytePos - sfc2.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc2.lb;
 
 		en_r_cr(&r1, lB1, &nr1, scr1, (float)scrc1, pr, &z1Copy);//binz1
 

@@ -92,32 +92,36 @@ void encode_stationary_source_Nsym_sub(uint *r, int lenr, float pw, int Nsym, in
 	}
 	else
 	{
-		sfcode = SFcode(codebook + 1, flg);
+		SFcode(codebook + 1, flg);
+		//sfcode = SFcode(codebook + 1, flg);
 		//printf("sfcode.lb = %d\n", sfcode.lb);
-		for (i = sfcode.lb - 1; i >= 0; i--)
-		{
-			t0 = (sfcode.code >> i) & 1;  ///SFcode(codebook+1,16)赋给bin
-			t1 = ptr & 7;
-			bin[ptr >> 3] |= (t0 << (7 - t1));
-			ptr++;
-		}
+		//for (i = sfcode.lb - 1; i >= 0; i--)
+		//{
+		//	t0 = (sfcode.code >> i) & 1;  ///SFcode(codebook+1,16)赋给bin
+		//	t1 = ptr & 7;
+		//	bin[ptr >> 3] |= (t0 << (7 - t1));
+		//	ptr++;
+		//}
 	}
 
 
 	int ptr1 = ptr;
 
 	x = ptr & 7;
-
+	
 	//第一种类型:m=2^k
 	if (!cls) {
 		if (Nsym > m)
 		{
 			hd0 = (Nsym - 0.5) / m - 1;
 			nfrac = Nsym - hd0 * m;
-
+			
 			for (j = 0; j < lenr; j++)
 			{
-
+				if (j == 4)
+				{
+					int xxxxx = 1;
+				}
 				hd = (r[j] - 0.5) / m;
 				// 修改
 				if (hd > hd0)    hd = hd0;
@@ -148,17 +152,17 @@ void encode_stationary_source_Nsym_sub(uint *r, int lenr, float pw, int Nsym, in
 						bin[ptr >> 3] |= 1 << (7 - x);
 						x++; x &= 7; ptr++;
 					}
-					se = SFcode((r[j] - hd0 * m), nfrac);
-					if (nfrac == 256) {
-						se.code = r[j] - 1;
-						se.lb = 8;
-					}
-					//printf("len = %d code = 0x%x\n", se.lb, se.code);
-					rem.a = se.code;
-					rem.a = rem.a << (16 - x - se.lb);
-					bin[ptr >> 3] |= rem.b[1];
-					bin[(ptr >> 3) + 1] |= rem.b[0];
-					ptr += se.lb; x += se.lb; x &= 7;
+					SFcode((r[j] - hd0 * m), nfrac);
+					//if (nfrac == 256) {
+					//	se.code = r[j] - 1;
+					//	se.lb = 8;
+					//}
+					////printf("len = %d code = 0x%x\n", se.lb, se.code);
+					//rem.a = se.code;
+					//rem.a = rem.a << (16 - x - se.lb);
+					//bin[ptr >> 3] |= rem.b[1];
+					//bin[(ptr >> 3) + 1] |= rem.b[0];
+					//ptr += se.lb; x += se.lb; x &= 7;
 					//printf("2.2 - (%d): lenb = %d lenc = %d\n", j+1 ,ptr-ptr_org, se.lb);
 				}
 			}
@@ -167,8 +171,8 @@ void encode_stationary_source_Nsym_sub(uint *r, int lenr, float pw, int Nsym, in
 		{
 			for (j = 0; j < lenr; j++)
 			{
-				se = SFcode(r[j], Nsym);
-				if (Nsym == 256) {
+				SFcode(r[j], Nsym);
+/*				if (Nsym == 256) {
 					se.code = r[j] - 1;
 					se.lb = 8;
 				}
@@ -176,7 +180,7 @@ void encode_stationary_source_Nsym_sub(uint *r, int lenr, float pw, int Nsym, in
 				rem.a = rem.a << (16 - x - se.lb);
 				bin[ptr >> 3] |= rem.b[1];
 				bin[(ptr >> 3) + 1] |= rem.b[0];
-				ptr += se.lb; x += se.lb; x &= 7;
+				ptr += se.lb; x += se.lb; x &= 7*/;
 			}
 		}
 	}
@@ -236,16 +240,16 @@ void encode_stationary_source_Nsym_sub(uint *r, int lenr, float pw, int Nsym, in
 						bin[ptr >> 3] |= 1 << (7 - x);
 						x++; x &= 7; ptr++;
 					}
-					se = SFcode((r[j] - hd0 * m), nfrac);
-					if (nfrac == 256) {
-						se.code = r[j] - 1;
-						se.lb = 8;
-					}
-					rem.a = se.code;
-					rem.a = rem.a << (16 - x - se.lb);
-					bin[ptr >> 3] |= rem.b[1];
-					bin[(ptr >> 3) + 1] |= rem.b[0];
-					ptr += se.lb; x += se.lb; x &= 7;
+					SFcode((r[j] - hd0 * m), nfrac);
+					//if (nfrac == 256) {
+					//	se.code = r[j] - 1;
+					//	se.lb = 8;
+					//}
+					//rem.a = se.code;
+					//rem.a = rem.a << (16 - x - se.lb);
+					//bin[ptr >> 3] |= rem.b[1];
+					//bin[(ptr >> 3) + 1] |= rem.b[0];
+					//ptr += se.lb; x += se.lb; x &= 7;
 					//printf("   (2)code = %d len = %d nfrac=%d\n", (r[j] - hd0 * m), se.lb, nfrac);
 					//printf("(2)bin len = %d\n", ptr-ptr1);
 				}
@@ -256,16 +260,16 @@ void encode_stationary_source_Nsym_sub(uint *r, int lenr, float pw, int Nsym, in
 		{
 			for (j = 0; j < lenr; j++)
 			{
-				se = SFcode(r[j], Nsym);
-				if (Nsym == 256) {
-					se.code = r[j] - 1;
-					se.lb = 8;
-				}
-				rem.a = se.code;
-				rem.a = rem.a << (16 - x - se.lb);
-				bin[ptr >> 3] |= rem.b[1];
-				bin[(ptr >> 3) + 1] |= rem.b[0];
-				ptr += se.lb; x += se.lb; x &= 7;
+				SFcode(r[j], Nsym);
+				//if (Nsym == 256) {
+				//	se.code = r[j] - 1;
+				//	se.lb = 8;
+				//}
+				//rem.a = se.code;
+				//rem.a = rem.a << (16 - x - se.lb);
+				//bin[ptr >> 3] |= rem.b[1];
+				//bin[(ptr >> 3) + 1] |= rem.b[0];
+				//ptr += se.lb; x += se.lb; x &= 7;
 			}
 		}
 	}

@@ -59,13 +59,13 @@ void en_zone_sub_new(Uint32_Dat* r, float kcr, SEP **sep)
 		p[1] = p1;
 		p[2] = p2;
 		/* biny=[biny SFcode(1,5)]; */
-		sfc1 = SFcode(1, 5);
-		x = ptr & 7;
-		rem.a = sfc1.code;
-		rem.a = rem.a << (16 - x - sfc1.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+		SFcode(1, 5);
+		//x = ptr & 7;
+		//rem.a = sfc1.code;
+		//rem.a = rem.a << (16 - x - sfc1.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 	}
 	else if (kcr < 450) { /* elseif kcr<450 */
 		nsep = 3;
@@ -74,13 +74,13 @@ void en_zone_sub_new(Uint32_Dat* r, float kcr, SEP **sep)
 		p[2] = p1;
 		p[3] = p2;
 		/* biny=[biny SFcode(2,5)]; */
-		sfc1 = SFcode(2, 5);
-		x = ptr & 7;
-		rem.a = sfc1.code;
-		rem.a = rem.a << (16 - x - sfc1.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+		SFcode(2, 5);
+		//x = ptr & 7;
+		//rem.a = sfc1.code;
+		//rem.a = rem.a << (16 - x - sfc1.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 	}
 	else if (kcr < 3600) { /* elseif kcr<3600 */
 		nsep = 4;
@@ -90,13 +90,13 @@ void en_zone_sub_new(Uint32_Dat* r, float kcr, SEP **sep)
 		p[3] = p1;
 		p[4] = p2;
 		/* biny=[biny SFcode(3,5)]; */
-		sfc1 = SFcode(3, 5);
-		x = ptr & 7;
-		rem.a = sfc1.code;
-		rem.a = rem.a << (16 - x - sfc1.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+		SFcode(3, 5);
+		//x = ptr & 7;
+		//rem.a = sfc1.code;
+		//rem.a = rem.a << (16 - x - sfc1.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 	}
 	else if (kcr < 16000) { /* elseif kcr<16000 */
 		nsep = 5;
@@ -107,13 +107,13 @@ void en_zone_sub_new(Uint32_Dat* r, float kcr, SEP **sep)
 		p[4] = p1;
 		p[5] = p2;
 		/* biny=[biny SFcode(4,5)]; */
-		sfc1 = SFcode(4, 5);
-		x = ptr & 7;
-		rem.a = sfc1.code;
-		rem.a = rem.a << (16 - x - sfc1.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+		SFcode(4, 5);
+		//x = ptr & 7;
+		//rem.a = sfc1.code;
+		//rem.a = rem.a << (16 - x - sfc1.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 	}
 	else {
 		nsep = 6;
@@ -125,13 +125,13 @@ void en_zone_sub_new(Uint32_Dat* r, float kcr, SEP **sep)
 		p[5] = p1;
 		p[6] = p2;
 		/* biny=[biny SFcode(5,5)]; */
-		sfc1 = SFcode(5, 5);
-		x = ptr & 7;
-		rem.a = sfc1.code;
-		rem.a = rem.a << (16 - x - sfc1.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += sfc1.lb; x += sfc1.lb; x &= 7;
+		SFcode(5, 5);
+		//x = ptr & 7;
+		//rem.a = sfc1.code;
+		//rem.a = rem.a << (16 - x - sfc1.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += sfc1.lb; x += sfc1.lb; x &= 7;
 	}
 	/* nnsep=nsep; ศ฿ำเ */
 

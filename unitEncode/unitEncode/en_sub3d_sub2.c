@@ -131,13 +131,13 @@ void en_sub3d_sub2(Int32_Dat* cf0, Uint8_Dat* sn, int maxcf0)
 		/* idx0=thdidx; */
 		idx0 = thdidx;
 		/* biny=[biny SFcode(thdidx,Nidx)]; */
-		x = ptr & 7;
-		se = SFcode(thdidx, Nidx);
-		rem.a = se.code;
-		rem.a = rem.a << (16 - x - se.lb);
-		bin[ptr >> 3] |= rem.b[1];
-		bin[(ptr >> 3) + 1] |= rem.b[0];
-		ptr += se.lb; x += se.lb; x &= 7;
+		//x = ptr & 7;
+		SFcode(thdidx, Nidx);
+		//rem.a = se.code;
+		//rem.a = rem.a << (16 - x - se.lb);
+		//bin[ptr >> 3] |= rem.b[1];
+		//bin[(ptr >> 3) + 1] |= rem.b[0];
+		//ptr += se.lb; x += se.lb; x &= 7;
 		//printf("(1)ptr = %d\n", ptr);
 		Uint32_Dat nrPlus;
 		nrPlus.dat = nr.dat + 1;

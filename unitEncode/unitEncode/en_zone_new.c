@@ -269,6 +269,10 @@ void en_zone_new(Uint32_Dat*r, Uint32_Dat*nc)
 			float crw2;
 			k_criterion(&rw2, &crw2, NULL, NULL, NULL, NULL, NULL, NULL, 0);
 			SEP* sepTemp1;
+
+			FILE* fp = fopen("rw2C.txt", "wb");
+            fwrite(rw2.dat, sizeof(unsigned int), rw2.len, fp);
+            fclose(fp);
 			en_zone_sub_new(&rw2, crw2, &sepTemp1);
 
 			//K_Criterion()
@@ -318,9 +322,7 @@ void en_zone_new(Uint32_Dat*r, Uint32_Dat*nc)
 			k_criterion(&rwCopy, &crw, NULL,NULL, NULL, NULL, NULL, NULL, 0);
 			SEP* sepTemp;
 
-			FILE* fp = fopen("rwCopy.txt", "wb");
-			fwrite(rwCopy.dat, sizeof(unsigned int), rwCopy.len, fp);
-			fclose(fp);
+
 			en_zone_sub_new(&rwCopy, crw, &sepTemp);
 			
 			//K_Criterion()
