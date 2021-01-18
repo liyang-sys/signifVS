@@ -232,6 +232,7 @@
     <ClCompile Include="test_en_z0.c" />
     <ClCompile Include="test_en_z0_r0.c" />
     <ClCompile Include="test_en_zone_sub2.c" />
+    <ClCompile Include="test_en_zone_sub_new.c" />
     <ClCompile Include="thd_index_inv.c" />
     <ClCompile Include="the_index.c" />
     <ClCompile Include="writeBin.c" />

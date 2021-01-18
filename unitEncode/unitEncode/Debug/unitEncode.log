@@ -1,6 +1,52 @@
-﻿  de_sub3d_sub2.c
-c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\de_sub3d_sub2.c(67): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\de_sub3d_sub2.c(72): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\de_sub3d_sub2.c(97): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\de_sub3d_sub2.c(132): warning C4018: “<”: 有符号/无符号不匹配
+﻿  en_sub3d_sub2_sub.c
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(43): warning C4133: “=”: 从“unsigned char *”到“unsigned int *”的类型不兼容
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(47): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(92): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(104): warning C4133: “=”: 从“unsigned char *”到“unsigned int *”的类型不兼容
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(108): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(139): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(196): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(204): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(212): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(225): warning C4133: “=”: 从“unsigned char *”到“unsigned int *”的类型不兼容
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(229): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(260): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(345): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(353): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(361): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(374): warning C4133: “=”: 从“unsigned char *”到“unsigned int *”的类型不兼容
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(378): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(409): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(423): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(443): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(622): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(630): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(638): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(651): warning C4133: “=”: 从“unsigned char *”到“unsigned int *”的类型不兼容
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(655): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(686): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(703): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(713): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(725): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(735): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(925): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(933): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(941): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(954): warning C4133: “=”: 从“unsigned char *”到“unsigned int *”的类型不兼容
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(958): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(989): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1000): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1010): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1022): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1032): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1228): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1236): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1244): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1257): warning C4133: “=”: 从“unsigned char *”到“unsigned int *”的类型不兼容
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1261): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1292): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1309): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1319): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1331): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2_sub.c(1341): warning C4018: “<”: 有符号/无符号不匹配
   unitEncode.vcxproj -> C:\Users\liyang\Desktop\BISHE\signifVS\unitEncode\Debug\unitEncode.exe

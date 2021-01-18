@@ -49,10 +49,10 @@
 #define uchar unsigned char
 
 
-SFC SFcode(uchar sym, uchar Nsym)//1，3
+SFC SFcode(uint sym, uint Nsym)//1，3
 {
 	SFC sfc1;
-	uchar Msym = 255, Ngap;
+	uint Msym = 1, Ngap;
 	sfc1.lb = 0;
 	Ngap = Nsym;
 	int lb2 = 0;
@@ -70,14 +70,14 @@ SFC SFcode(uchar sym, uchar Nsym)//1，3
 	/** 向二的阶乘靠拢，并计算出其补偿，比如现在Ngap等于30，
 	  *  那(Msym >>= (8 - sfc1.lb)) = 32，此后Ngap=2
 	  */
-	Ngap = (Msym >>= (8 - sfc1.lb)) + 1 - Ngap;
+	Ngap = (Msym <<= lb2) - Ngap;
 
 	if (sym <= (Ngap - 1)) {
-		sfc1.code = (uchar)sym;
+		sfc1.code = sym;
 		sfc1.lb--;
 	}
 	else {
-		sfc1.code = (uchar)(sym + Ngap);
+		sfc1.code = (sym + Ngap);
 		Nsym = sfc1.code;
 		sfc1.lb = 0;
 		while (Nsym > 0) {

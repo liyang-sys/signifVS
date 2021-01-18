@@ -149,15 +149,46 @@ void encode_stationary_source_Nsym_sub(uint *r, int lenr, float pw, int Nsym, in
 						x++; x &= 7; ptr++;
 					}
 					se = SFcode((r[j] - hd0 * m), nfrac);
-					if (nfrac == 256) {
-						se.code = r[j] - 1;
-						se.lb = 8;
-					}
+					//if (nfrac == 256) {
+					//	se.code = r[j] - 1;
+					//	se.lb = 8;
+					//}
 					//printf("len = %d code = 0x%x\n", se.lb, se.code);
-					rem.a = se.code;
-					rem.a = rem.a << (16 - x - se.lb);
-					bin[ptr >> 3] |= rem.b[1];
-					bin[(ptr >> 3) + 1] |= rem.b[0];
+					if (se.lb <= 8)
+					{
+						rem.a = se.code;
+						rem.a = rem.a << (16 - x - se.lb);
+						bin[ptr >> 3] |= rem.b[1];
+						bin[(ptr >> 3) + 1] |= rem.b[0];
+					}
+					else if (se.lb <= 16 && se.lb > 8)
+					{
+						printf("SFcode超过了8位 in encode_stationary_source_Nsym_sub\n");
+						rem.a = se.code;
+						rem.a = rem.a << (24 - x - se.lb);
+						bin[ptr >> 3] |= rem.b[2];
+						bin[(ptr >> 3) + 1] |= rem.b[1];
+						bin[(ptr >> 3) + 2] |= rem.b[0];
+					}
+					else if (se.lb <= 24 && se.lb > 16)
+					{
+						printf("SFcode超过了24位 in encode_stationary_source_Nsym_sub\n");
+						rem.a = se.code;
+						rem.a = rem.a << (32 - x - se.lb);
+						bin[ptr >> 3] |= rem.b[3];
+						bin[(ptr >> 3) + 1] |= rem.b[2];
+						bin[(ptr >> 3) + 2] |= rem.b[1];
+						bin[(ptr >> 3) + 3] |= rem.b[0];
+					}
+					else
+					{
+						printf("SFcode超过了32位 in encode_stationary_source_Nsym_sub\n");
+					}
+
+					//rem.a = se.code;
+					//rem.a = rem.a << (16 - x - se.lb);
+					//bin[ptr >> 3] |= rem.b[1];
+					//bin[(ptr >> 3) + 1] |= rem.b[0];
 					ptr += se.lb; x += se.lb; x &= 7;
 					//printf("2.2 - (%d): lenb = %d lenc = %d\n", j+1 ,ptr-ptr_org, se.lb);
 				}
@@ -168,14 +199,45 @@ void encode_stationary_source_Nsym_sub(uint *r, int lenr, float pw, int Nsym, in
 			for (j = 0; j < lenr; j++)
 			{
 				se = SFcode(r[j], Nsym);
-				if (Nsym == 256) {
-					se.code = r[j] - 1;
-					se.lb = 8;
+				//if (Nsym == 256) {
+				//	se.code = r[j] - 1;
+				//	se.lb = 8;
+				//}
+				//rem.a = se.code;
+				//rem.a = rem.a << (16 - x - se.lb);
+				//bin[ptr >> 3] |= rem.b[1];
+				//bin[(ptr >> 3) + 1] |= rem.b[0];
+				//binBytePos = ptr&7;
+				if (se.lb <= 8)
+				{
+					rem.a = se.code;
+					rem.a = rem.a << (16 - x - se.lb);
+					bin[ptr >> 3] |= rem.b[1];
+					bin[(ptr >> 3) + 1] |= rem.b[0];
 				}
-				rem.a = se.code;
-				rem.a = rem.a << (16 - x - se.lb);
-				bin[ptr >> 3] |= rem.b[1];
-				bin[(ptr >> 3) + 1] |= rem.b[0];
+				else if (se.lb <= 16 && se.lb > 8)
+				{
+					printf("SFcode超过了8位 in encode_stationary_source_Nsym_sub\n");
+					rem.a = se.code;
+					rem.a = rem.a << (24 - x - se.lb);
+					bin[ptr >> 3] |= rem.b[2];
+					bin[(ptr >> 3) + 1] |= rem.b[1];
+					bin[(ptr >> 3) + 2] |= rem.b[0];
+				}
+				else if (se.lb <= 24 && se.lb > 16)
+				{
+					printf("SFcode超过了24位 in encode_stationary_source_Nsym_sub\n");
+					rem.a = se.code;
+					rem.a = rem.a << (32 - x - se.lb);
+					bin[ptr >> 3] |= rem.b[3];
+					bin[(ptr >> 3) + 1] |= rem.b[2];
+					bin[(ptr >> 3) + 2] |= rem.b[1];
+					bin[(ptr >> 3) + 3] |= rem.b[0];
+				}
+				else
+				{
+					printf("SFcode超过了32位 in encode_stationary_source_Nsym_sub\n");
+				}
 				ptr += se.lb; x += se.lb; x &= 7;
 			}
 		}
@@ -237,14 +299,44 @@ void encode_stationary_source_Nsym_sub(uint *r, int lenr, float pw, int Nsym, in
 						x++; x &= 7; ptr++;
 					}
 					se = SFcode((r[j] - hd0 * m), nfrac);
-					if (nfrac == 256) {
-						se.code = r[j] - 1;
-						se.lb = 8;
+					//if (nfrac == 256) {
+					//	se.code = r[j] - 1;
+					//	se.lb = 8;
+					//}
+					//rem.a = se.code;
+					//rem.a = rem.a << (16 - x - se.lb);
+					//bin[ptr >> 3] |= rem.b[1];
+					//bin[(ptr >> 3) + 1] |= rem.b[0];
+					if (se.lb <= 8)
+					{
+						rem.a = se.code;
+						rem.a = rem.a << (16 - x - se.lb);
+						bin[ptr >> 3] |= rem.b[1];
+						bin[(ptr >> 3) + 1] |= rem.b[0];
 					}
-					rem.a = se.code;
-					rem.a = rem.a << (16 - x - se.lb);
-					bin[ptr >> 3] |= rem.b[1];
-					bin[(ptr >> 3) + 1] |= rem.b[0];
+					else if (se.lb <= 16 && se.lb > 8)
+					{
+						printf("SFcode超过了8位 in encode_stationary_source_Nsym_sub\n");
+						rem.a = se.code;
+						rem.a = rem.a << (24 - x - se.lb);
+						bin[ptr >> 3] |= rem.b[2];
+						bin[(ptr >> 3) + 1] |= rem.b[1];
+						bin[(ptr >> 3) + 2] |= rem.b[0];
+					}
+					else if (se.lb <= 24 && se.lb > 16)
+					{
+						printf("SFcode超过了24位 in encode_stationary_source_Nsym_sub\n");
+						rem.a = se.code;
+						rem.a = rem.a << (32 - x - se.lb);
+						bin[ptr >> 3] |= rem.b[3];
+						bin[(ptr >> 3) + 1] |= rem.b[2];
+						bin[(ptr >> 3) + 2] |= rem.b[1];
+						bin[(ptr >> 3) + 3] |= rem.b[0];
+					}
+					else
+					{
+						printf("SFcode超过了32位 in encode_stationary_source_Nsym_sub\n");
+					}
 					ptr += se.lb; x += se.lb; x &= 7;
 					//printf("   (2)code = %d len = %d nfrac=%d\n", (r[j] - hd0 * m), se.lb, nfrac);
 					//printf("(2)bin len = %d\n", ptr-ptr1);
@@ -257,14 +349,44 @@ void encode_stationary_source_Nsym_sub(uint *r, int lenr, float pw, int Nsym, in
 			for (j = 0; j < lenr; j++)
 			{
 				se = SFcode(r[j], Nsym);
-				if (Nsym == 256) {
-					se.code = r[j] - 1;
-					se.lb = 8;
+				//if (Nsym == 256) {
+				//	se.code = r[j] - 1;
+				//	se.lb = 8;
+				//}
+				//rem.a = se.code;
+				//rem.a = rem.a << (16 - x - se.lb);
+				//bin[ptr >> 3] |= rem.b[1];
+				//bin[(ptr >> 3) + 1] |= rem.b[0];
+				if (se.lb <= 8)
+				{
+					rem.a = se.code;
+					rem.a = rem.a << (16 - x - se.lb);
+					bin[ptr >> 3] |= rem.b[1];
+					bin[(ptr >> 3) + 1] |= rem.b[0];
 				}
-				rem.a = se.code;
-				rem.a = rem.a << (16 - x - se.lb);
-				bin[ptr >> 3] |= rem.b[1];
-				bin[(ptr >> 3) + 1] |= rem.b[0];
+				else if (se.lb <= 16 && se.lb > 8)
+				{
+					printf("SFcode超过了8位 in encode_stationary_source_Nsym_sub\n");
+					rem.a = se.code;
+					rem.a = rem.a << (24 - x - se.lb);
+					bin[ptr >> 3] |= rem.b[2];
+					bin[(ptr >> 3) + 1] |= rem.b[1];
+					bin[(ptr >> 3) + 2] |= rem.b[0];
+				}
+				else if (se.lb <= 24 && se.lb > 16)
+				{
+					printf("SFcode超过了24位 in encode_stationary_source_Nsym_sub\n");
+					rem.a = se.code;
+					rem.a = rem.a << (32 - x - se.lb);
+					bin[ptr >> 3] |= rem.b[3];
+					bin[(ptr >> 3) + 1] |= rem.b[2];
+					bin[(ptr >> 3) + 2] |= rem.b[1];
+					bin[(ptr >> 3) + 3] |= rem.b[0];
+				}
+				else
+				{
+					printf("SFcode超过了32位 in encode_stationary_source_Nsym_sub\n");
+				}
 				ptr += se.lb; x += se.lb; x &= 7;
 			}
 		}

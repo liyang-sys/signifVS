@@ -16,8 +16,9 @@ int main()
 	//test_de_r_cr();
 	//writeBin();
 	//test_en_sub3d_sub2();
-	//test_en_sub3d_sub2_sub();
+	test_en_sub3d_sub2_sub();
 	//test_de_sub3d_sub2_sub();
-	test_de_sub3d_sub2();
+	//test_de_sub3d_sub2();
+	//test_en_zone_sub_new();
 	return 0;
 }

@@ -425,7 +425,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 				crTestCf1Copy.dat[i] = crTest.cf1.dat[i];
 			}
 			CR_TEST_RET crTest1 = cr_test(&crTestCf1Copy, thdt, &crTest.nc1);
-			free(crTestCf1Copy.dat);
+			//free(crTestCf1Copy.dat);
 
 			//CR_TEST_RET crTest1 = cr_test(&crTest.cf1, thdt, &crTest.nc1);
 			if (crTest1.sumcr > 12)
@@ -445,7 +445,7 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 					crTest2Cf1Copy.dat[i] = crTest2.cf1.dat[i];
 				}
 				CR_TEST_RET crTest3 = cr_test(&crTest2Cf1Copy, thdt, &crTest2.nc1);
-				free(crTestCf1Copy.dat);
+				//free(crTest2Cf1Copy.dat);
 
 				//CR_TEST_RET crTest3 = cr_test(&crTest2.cf1, thdt, &crTest2.nc1);
 				if ((crTest3.sumcr > 16) && (L3 == 1))
