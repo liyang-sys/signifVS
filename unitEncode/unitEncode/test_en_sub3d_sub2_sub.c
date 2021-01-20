@@ -16,7 +16,7 @@ void test_en_sub3d_sub2_sub()
 		unsigned short int a;
 		uchar b[4];
 	} rem;
-	int zLen = 262144;
+	int zLen = 131072;
 	unsigned int *bigZ = (unsigned int *)calloc(zLen, sizeof(unsigned int));
 	FILE *fp = fopen("Z.txt", "rb");
 	fread(bigZ, sizeof(unsigned int), zLen, fp);
@@ -44,21 +44,21 @@ void test_en_sub3d_sub2_sub()
 	printf("\n------------------------------------------------------------------------------------------\n");
 	///从matlab读取runs数组
 	Uint32_Dat r;
-	r.len = 48728;
+	r.len = 37071;
 	r.dat = (unsigned int *)calloc(r.len, sizeof(unsigned int));
 	fp = fopen("R.txt", "rb");
 	fread(r.dat, sizeof(unsigned int), r.len, fp);
 	fclose(fp);
 
 	Uint32_Dat nr;
-	nr.len = 4329;
+	nr.len = 1142;
 	nr.dat = (unsigned int *)calloc(nr.len, sizeof(unsigned int));
 	fp = fopen("NR.txt", "rb");
 	fread(nr.dat, sizeof(unsigned int), nr.len, fp);
 	fclose(fp);
 
 	Uint32_Dat cfk;
-	cfk.len = 213417;
+	cfk.len = 94002;
 	cfk.dat = (unsigned int *)calloc(cfk.len, sizeof(unsigned int));
 	fp = fopen("CFK.txt", "rb");
 	fread(cfk.dat, sizeof(unsigned int), cfk.len, fp);
@@ -86,12 +86,13 @@ void test_en_sub3d_sub2_sub()
 	//float pr = 0.2383;
 	//float pr = 0.5339;
 	//float pr = 0.3680;
-	float pr = 0.3985;
+	//float pr = 0.2112;
+	float pr = 0.2572;
 	//float scr = 53.0452;
 	//float scr = 24.6226;
 	//float scr = 976.9947;
 	//float scr = 661.5757;
-	float scr = 22744.6;
+	float scr = 4804.1;
 	//float scr = 414.8284;
 	//float scr = 976.0139;
 	//float scr = 190.4475;
@@ -103,7 +104,7 @@ void test_en_sub3d_sub2_sub()
 	//float scrc = 17;
 	//float scrc = 185;
 	//float scrc = 174;
-	float scrc = 1541;
+	float scrc = 468;
 	//float scrc = 77;
 	//float scrc = 189;
 	//float scrc = 60;

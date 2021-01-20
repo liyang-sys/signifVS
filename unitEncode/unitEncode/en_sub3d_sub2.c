@@ -12,16 +12,16 @@ void en_sub3d_sub2(Int32_Dat* cf0, Uint8_Dat* sn, int maxcf0)
 	extern unsigned char *bin;
 	extern int ptr;
 	/* 初始化 */
-	bin = NULL;
-	ptr = 0;
+	//bin = NULL;
+	//ptr = 0;
 	/* 为后面bin_iter的编码腾出空间 */
 	ptr += 3;
-	bin = (unsigned char *)malloc(sizeof(unsigned char)*((cf0->len) / 8 + 1));  // 分配绝对足够的空间
-	memset(bin, 0, sizeof(unsigned char)*((cf0->len) / 8 + 1));
-	if (bin == NULL) {
-		perror("bin");
-		exit(-1);
-	}
+	//bin = (unsigned char *)malloc(sizeof(unsigned char)*((cf0->len) / 8 + 1));  // 分配绝对足够的空间
+	//memset(bin, 0, sizeof(unsigned char)*((cf0->len) / 8 + 1));
+	//if (bin == NULL) {
+	//	perror("bin");
+	//	exit(-1);
+	//}
 
 	union data {
 		uint a;
@@ -198,12 +198,27 @@ void en_sub3d_sub2(Int32_Dat* cf0, Uint8_Dat* sn, int maxcf0)
 
 	/* biny=[biny  sn]; */
 	x &= ptr;
-	for (int i = 0, j = 0; i < sn->len; i++) {
-		j = i & 7;
-		j = 7 - j;
-		bin[ptr >> 3] |= ((sn->dat[i / 8] << (7 - j)) >> 7) << (7 - x);
-		x++; x &= 7; ptr++;
-	}
+	printf("\n-----------------------------------------------\n");
+	//for (int i = 0, j = 0; i < sn->len; i++) {
+	//	j = i & 7;
+	//	j = 7 - j;
+	//	printf("%d ", ((sn->dat[i / 8] << (7 - j)) >> 7) << (7 - x));
+	//	bin[ptr >> 3] |= ((sn->dat[i / 8] << (7 - j)) >> 7) << (7 - x);
+	//	x++; x &= 7; ptr++;
+	//}
+
+	//int tempBit = 0;
+	//for (int i = 0; i < sn->len; i++)
+	//{
+
+	//	tempBit = (sn->dat[ptr >> 3] >> (7 - (i & 7))) & 1;
+	//	if (tempBit == 1)
+	//	{
+	//		bin[ptr >> 3] |= (1 << (7 - (ptr&7)));
+	//	}
+	//	ptr++;
+	//}
+	bin_add(bin,sn->dat , sn->len);
 
 	//printf("(4)ptr = %d\n", ptr);
 

@@ -66,6 +66,7 @@ void en_sub3d_sub2(Int32_Dat* cf0, Uint8_Dat* sn, int maxcf0);
 CR_TEST_RET cr_test(Uint32_Dat* cf, int thd, Uint32_Dat*nc);
 DE_S_S_SUB de_sub3d_sub2_sub(uchar *biny, int thd, int len, int lenbinbit);
 DE_S_SUB de_sub3d_sub2(uchar *bin, int len, int qctr, int lenbinbit);
+int bin_add(uchar *bin1, uchar *bin2, int lenbin2bit);
 
 //≤‚ ‘
 void test_en_2n_code_new();

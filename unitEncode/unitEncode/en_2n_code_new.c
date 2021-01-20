@@ -32,7 +32,7 @@ void en_2n_code_new(Uint32_Dat* c2n, Uint32_Dat* nc,int typ,int maxc)
 				int binBytePos = ptr & 7;
 				ptr++; binBytePos++;
 				binBytePos &= 7;//编码0
-				SEP sepC2n = separate0(c2n->dat, thd, c2n->len, 1);//c2n->dat是无符号的int
+				SEP sepC2n = separate0(c2n->dat, thdh, c2n->len, 1);//c2n->dat是无符号的int
 				Uint8_Dat z;
 				z.dat = sepC2n.sep;
 				z.len = sepC2n.lensepbit;//有效位
@@ -58,7 +58,7 @@ void en_2n_code_new(Uint32_Dat* c2n, Uint32_Dat* nc,int typ,int maxc)
 				Uint32_Dat clk;
 				clk.dat = sepC2n.rw;
 				clk.len = sepC1.lrk;
-				en_2n_code_sub(&ck, NULL, n - 1);//编码bink1
+				en_2n_code_sub(&clk, NULL, n - 1);//编码bink1
 
 				Uint32_Dat c3;
 				c3.dat = sepC2.rw;

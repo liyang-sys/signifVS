@@ -16,7 +16,7 @@ void test_en_sub3d_sub2()
 		unsigned short int a;
 		uchar b[4];
 	} rem;
-	int snLen = 58;
+	int snLen = 510;
 	unsigned int *bigZ = (unsigned int *)calloc(snLen, sizeof(unsigned int));
 	FILE *fp = fopen("snCCC.txt", "rb");
 	fread(bigZ, sizeof( unsigned int), snLen, fp);
@@ -44,7 +44,7 @@ void test_en_sub3d_sub2()
 	printf("\n------------------------------------------------------------------------------------------\n");
 	///从matlab读取runs数组
 	Int32_Dat cf0;
-	cf0.len = 8192;
+	cf0.len = 510;
 	cf0.dat = (int*)calloc(cf0.len, sizeof(int));
 	fp = fopen("cf0CCC.txt", "rb");
 	//fp = fopen("wunsDAYUlenf1C2N.txt","rb");
@@ -56,7 +56,7 @@ void test_en_sub3d_sub2()
 	//	printf("%d ", cf0.dat[i]);
 	//}
 
-	int maxcf0 = 2;
+	int maxcf0 = 3398;
 	en_sub3d_sub2(&cf0, &sn, maxcf0);
 	printf("\n编码结束后ptr = %d\n", ptr);
 	fp = fopen("encodeZThd4.txt", "wb");

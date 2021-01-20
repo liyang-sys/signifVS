@@ -21,6 +21,12 @@ DES deSFcode(uchar *bin, uchar Nsym)
 		Nsym >>= 1;
 		lb++;
 	}
+
+	if (lb > 8)
+	{
+		printf("deSFcode出现lb大于8位\n");
+	}
+
 	Ngap = (Msym >> (8 - lb)) + 1 - Ngap;
 	lb--;
 	rem.b[3] = bin[ptr >> 3];

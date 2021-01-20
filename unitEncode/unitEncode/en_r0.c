@@ -152,9 +152,19 @@ void en_r0 (uint *r, int lenr)
     {
         if ((lenr == 1) && (inv == 1))
         {
-            printf("en_r0 6:\n");///
-            bin[0] = 254;
-            ptr = 6;
+            printf("ÒÑ¾­ÐÞ¸´bug en_r0 6:\n");///
+            //bin[0] = 254;
+            //ptr = 6;
+			sfc1 = SFcode(37, 37);
+
+			x = ptr & 7;
+			bin[ptr >> 3] |= inv << (7 - x);
+			ptr++; x++; x &= 7;
+			rem.a = sfc1.code;
+			rem.a = rem.a << (16 - x - sfc1.lb);
+			bin[ptr >> 3] |= rem.b[1];
+			bin[(ptr >> 3) + 1] |= rem.b[0];
+			ptr += sfc1.lb; x += sfc1.lb; x &= 7;
         }
         else
         {
