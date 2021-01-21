@@ -15,6 +15,7 @@ void en_sub3d_sub2(Int32_Dat* cf0, Uint8_Dat* sn, int maxcf0)
 	//bin = NULL;
 	//ptr = 0;
 	/* 为后面bin_iter的编码腾出空间 */
+	int tempPtr = ptr;
 	ptr += 3;
 	//bin = (unsigned char *)malloc(sizeof(unsigned char)*((cf0->len) / 8 + 1));  // 分配绝对足够的空间
 	//memset(bin, 0, sizeof(unsigned char)*((cf0->len) / 8 + 1));
@@ -179,7 +180,13 @@ void en_sub3d_sub2(Int32_Dat* cf0, Uint8_Dat* sn, int maxcf0)
 	iter += -1;
 
 	/* biny=[bin_iter biny ]; */
-	bin[0] |= (iter - 1) << 5;
+	//bin[0] |= (iter - 1) << 5;
+
+
+	rem.a = iter - 1;
+	rem.a = rem.a << (16 - (tempPtr & 7) - 3);
+	bin[tempPtr >> 3] |= rem.b[1];
+	bin[(tempPtr >> 3) + 1] |= rem.b[0];
 
 	/* 调试代码段 */
 #if 0
