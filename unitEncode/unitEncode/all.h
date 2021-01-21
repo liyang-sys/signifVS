@@ -60,7 +60,8 @@ DER de_r0 (uchar *bin, int lenr, int lenbinbit);
 typedef struct {
 	uint sym;
 } DES;
-DES deSFcode (uchar* bin, uchar Nsym);
+//DES deSFcode (uchar* bin, uchar Nsym);
+DES deSFcode(uchar *bin, int Nsym);
 
 typedef struct {
 	uint *r;

@@ -13,7 +13,11 @@ void test_de_sub3d_sub2_sub()
 		unsigned short int a;
 		uchar b[4];
 	} rem;
-	int zLen = 438253;
+	//int zLen = 438253;
+	//int zLen = 290246;
+	//int zLen = 218780;
+	//int zLen = 419491;
+	int zLen = 391250;
 	unsigned int *bigZ = (unsigned int *)calloc(zLen, sizeof(unsigned int));
 	FILE *fp = fopen("MBiny.txt", "rb");
 	fread(bigZ, sizeof(unsigned int), zLen, fp);
@@ -49,7 +53,11 @@ void test_de_sub3d_sub2_sub()
 		
 	}
 	printf("\n-----------------------------------------------------------------------------------\n");
-	ptr = 228732;
+	//ptr = 228732;
+	//ptr = 16;
+	//ptr = 118057;
+	//ptr = 209703;
+	ptr = 242264;
 	//DEC dec = de_r_cr(z.dat, 65536, 5210);
 	//DE_S_S_SUB sub = de_sub3d_sub2_sub(z.dat, 3, 16384, 53135);
 	//DE_S_S_SUB sub = de_sub3d_sub2_sub(z.dat, 4, 3787, 53135);
@@ -57,7 +65,7 @@ void test_de_sub3d_sub2_sub()
 	//DE_S_S_SUB sub = de_sub3d_sub2_sub(z.dat, 8, 1274, 20394);
 	//DE_S_S_SUB sub = de_sub3d_sub2_sub(z.dat, 12, 1024, 5774);
 	//DE_S_S_SUB sub = de_sub3d_sub2_sub(z.dat, 12, 16384, zLen);
-	DE_S_S_SUB sub = de_sub3d_sub2_sub(z.dat, 6, 19679, zLen);
+	DE_S_S_SUB sub = de_sub3d_sub2_sub(z.dat, 6, 5971, zLen);
 	fp = fopen("zC.txt", "wb");
 	fwrite(sub.z.dat, sizeof(unsigned char), ((sub.z.len) / 8) + 1, fp);
 	fclose(fp);

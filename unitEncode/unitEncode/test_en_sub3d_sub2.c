@@ -56,8 +56,10 @@ void test_en_sub3d_sub2()
 	//	printf("%d ", cf0.dat[i]);
 	//}
 
-	int maxcf0 = 3398;
+	int maxcf0 = 3619;
 	en_sub3d_sub2(&cf0, &sn, maxcf0);
+
+	printf("\n%d %d %d\n", bin[639], bin[640], bin[641]);
 	printf("\n±àÂë½áÊøºóptr = %d\n", ptr);
 	fp = fopen("encodeZThd4.txt", "wb");
 	fwrite(bin, sizeof(unsigned char), (ptr / 8) + 1, fp);
