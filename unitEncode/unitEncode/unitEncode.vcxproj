@@ -226,6 +226,7 @@
     <ClCompile Include="test_en_2n_code_new.c" />
     <ClCompile Include="test_en_2n_code_sub.c" />
     <ClCompile Include="test_en_and_de_2n_code_new.c" />
+    <ClCompile Include="test_en_de_sub3d_sub2.c" />
     <ClCompile Include="test_en_r_cr.c" />
     <ClCompile Include="test_en_sub3d_sub2.c" />
     <ClCompile Include="test_en_sub3d_sub2_sub.c" />

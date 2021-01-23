@@ -336,6 +336,9 @@
     <ClCompile Include="test_en_zone_sub_new.c">
       <Filter>源文件\src</Filter>
     </ClCompile>
+    <ClCompile Include="test_en_de_sub3d_sub2.c">
+      <Filter>源文件\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="all.h">
