@@ -194,7 +194,7 @@
  * @param  _1B[OUT]      : 若不需要此变量，传递NULL
  * @param  p[OUT]        : 若不需要此变量，传递NULL
  * @param  nc[OUT]       : 若不需要此变量，传递NULL, 实际使用索引从1开始
- * @param  k[OUT]        : 若不需要此变量，传递NULL //李旸注释：输出比实际长度多1个，数组第一个的时候没有数据
+ * @param  k[OUT]        : 若不需要此变量，传递NULL //李旸注释：输出长度没变数据多一个，数组第一个的时候没有数据
  * @param  sep_flg[IN]   : 传入1代表为sep 0 1二进制码流，传入0代表是r数组
  * @retval none
  * @note

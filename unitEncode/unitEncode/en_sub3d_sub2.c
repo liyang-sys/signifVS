@@ -166,11 +166,16 @@ void en_sub3d_sub2(Int32_Dat* cf0, Uint8_Dat* sn, int maxcf0)
 
 		if (maxcf >= 2) {
 			
+			free(nc);//ÐÞ¸Ä
 			k_criterion((void *)&cf, NULL, &crc, NULL, NULL, NULL, &nc_temp, NULL, 0);
 			nc = nc_temp.dat;
 			nc_len = nc_temp.len;
+			for (int i = 0; i < nc_len; i++)
+			{
+				nc[i] = nc[i + 1];
+			}
 
-			free(nc_temp.dat);//ÐÞ¸Ä
+			
 			//printf("crc = %d\n", crc);
 		}
 		else {
@@ -205,29 +210,10 @@ void en_sub3d_sub2(Int32_Dat* cf0, Uint8_Dat* sn, int maxcf0)
 
 	/* biny=[biny  sn]; */
 	x &= ptr;
-	printf("\n-----------------------------------------------\n");
-	//for (int i = 0, j = 0; i < sn->len; i++) {
-	//	j = i & 7;
-	//	j = 7 - j;
-	//	printf("%d ", ((sn->dat[i / 8] << (7 - j)) >> 7) << (7 - x));
-	//	bin[ptr >> 3] |= ((sn->dat[i / 8] << (7 - j)) >> 7) << (7 - x);
-	//	x++; x &= 7; ptr++;
-	//}
-
-	//int tempBit = 0;
-	//for (int i = 0; i < sn->len; i++)
-	//{
-
-	//	tempBit = (sn->dat[ptr >> 3] >> (7 - (i & 7))) & 1;
-	//	if (tempBit == 1)
-	//	{
-	//		bin[ptr >> 3] |= (1 << (7 - (ptr&7)));
-	//	}
-	//	ptr++;
-	//}
 	bin_add(bin,sn->dat , sn->len);
-
+	free(nc);
 	//printf("(4)ptr = %d\n", ptr);
+	//free(nc_temp.dat);
 
 	return;
 }

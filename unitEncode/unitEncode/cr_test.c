@@ -41,7 +41,7 @@ CR_TEST_RET cr_test(Uint32_Dat* cf,int thd, Uint32_Dat*nc)
 	int cr_count, cri_count;
 	float cri;
 	k_criterion((void*)(&z), &(ret.cr), &cr_count, &(ret.r), &(ret.lB), &(ret.pr), &(ret.nr), NULL,1);
-	(ret.nr.len)--;
+	//(ret.nr.len)--;//¿ÉÄÜÊÇbug
 	for (int i = 0; i < ret.nr.len; i++)
 	{
 		ret.nr.dat[i] = ret.nr.dat[i + 1];

@@ -67,7 +67,7 @@ CR_TEST_RET cr_test(Uint32_Dat* cf, int thd, Uint32_Dat*nc);
 DE_S_S_SUB de_sub3d_sub2_sub(uchar *biny, int thd, int len, int lenbinbit);
 DE_S_SUB de_sub3d_sub2(uchar *bin, int len, int qctr, int lenbinbit);
 int bin_add(uchar *bin1, uchar *bin2, int lenbin2bit);
-void test_en_de_sub3d_sub2();
+
 
 //²âÊÔ
 void test_en_2n_code_new();
@@ -84,5 +84,6 @@ void test_en_sub3d_sub2_sub();
 void test_de_sub3d_sub2_sub();
 void test_de_sub3d_sub2();
 void test_en_zone_sub_new();
+void test_en_de_sub3d_sub2();
 
 #endif /* __ENCODING_H */

@@ -16,15 +16,15 @@ void test_en_z0()
     FILE *fp;
     ptr = 0;
     bin = calloc(2048,sizeof(uchar));
-    int zLen = 319;
-    unsigned int *bigZ = (unsigned int *) calloc (zLen, sizeof(unsigned int));
-    fp = fopen("MZ.txt","rb");
-    fread(bigZ, sizeof(unsigned int), zLen, fp);
-	for (int i = 0; i < zLen; i++)
-	{
-		printf("%d", bigZ[i]);
-	}
-	printf("\n");
+    int zLen = 1012;
+    unsigned char *bigZ = (unsigned char *) calloc (zLen, sizeof(unsigned char));
+    fp = fopen("binzkM.txt","rb");
+    fread(bigZ, sizeof(unsigned char), zLen, fp);
+	//for (int i = 0; i < zLen; i++)
+	//{
+	//	printf("%d", bigZ[i]);
+	//}
+	//printf("\n");
     int index = 0;
     int indexZ = 0;
     Uint8_Dat z;
@@ -45,8 +45,12 @@ void test_en_z0()
         indexZ++;
         index &=7;
     }
-    en_z0(&z,sumZ);
+
+	fclose(fp);
+	en_z0(&z, sumZ);
 	printf("\n±àÂëÖ®ºóµÄptr = %d\n bin =%p ", ptr, bin);
-	int temp = 0;
+
+	fp = fopen("enzkC.txt", "wb");
+	fwrite(bin, sizeof(unsigned char), (ptr / 8) + 1, fp);
 	fclose(fp);
 }

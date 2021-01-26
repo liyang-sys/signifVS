@@ -7,6 +7,7 @@
 ESSC encode_stationary_source_cbook (float pw)
 {
    ESSC essc1;
+   essc1.codebook = 0, essc1.k = 0, essc1.m = 0, essc1.cls = 0;
 
    if (pw < 1 && pw != 0) {
       if (pw > 0.242141716744801)

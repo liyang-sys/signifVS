@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "all.h"
 #include "encoding.h"
@@ -115,7 +116,15 @@ void en_2n_code_new(Uint32_Dat* c2n, Uint32_Dat* nc,int typ,int maxc)
 				Uint8_Dat zk;
 				zk.dat = sepCk.sep;
 				zk.len = sepCk.lensepbit;//ÓÐÐ§Î»
+
+
+
+
 				en_z0(&zk, sepCk.lrw);//±àÂëbinzk
+
+				//FILE*fp = fopen("binTC.txt", "wb");
+				//fwrite(bin, sizeof(unsigned char), (ptr / 8) + 1, fp);
+				//fclose(fp);
 
 				SEP sepCw = separate0(sepC2n.rw, thdh, sepC2n.lrw, 1);
 				Uint8_Dat zw;
