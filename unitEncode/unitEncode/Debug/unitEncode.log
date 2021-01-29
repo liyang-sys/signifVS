@@ -1,2 +1,7 @@
-﻿  test_en_sub3d_sub2.c
+﻿  en_sub3d_sub2.c
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2.c(66): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2.c(78): warning C4305: “=”: 从“double”到“float”截断
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2.c(117): warning C4013: “find_thd4subs”未定义；假设外部返回 int
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2.c(162): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\liyang\desktop\bishe\signifvs\unitencode\unitencode\en_sub3d_sub2.c(39): warning C4305: “初始化”: 从“double”到“float”截断
   unitEncode.vcxproj -> C:\Users\liyang\Desktop\BISHE\signifVS\unitEncode\Debug\unitEncode.exe

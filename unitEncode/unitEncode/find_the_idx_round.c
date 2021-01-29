@@ -45,7 +45,8 @@ void find_the_idx_round(Uint32_Dat* n, float p, int * thd_arr, int *idx)
 #endif
 	/* Hint:
 	 C语言和MATLAB并没有实现索引同步，C语言指针索引减1 */
-	while (ssm < psm && ((*idx) - 1) < 24 && thd_arr[(*idx)] < lenn) {
+	//while (ssm < psm && ((*idx) - 1) < 24 && thd_arr[(*idx)] < lenn) {
+	while (ssm < psm && ((*idx)) < 23 && thd_arr[(*idx)] < lenn) {
 		/* sum(n(thd_arr(idx)+1:thd_arr(idx+1))); */
 		sum = 0;
 		for (int i = thd_arr[(*idx) - 1]; i < thd_arr[(*idx)]; i++) {
@@ -73,7 +74,9 @@ void find_the_idx_round(Uint32_Dat* n, float p, int * thd_arr, int *idx)
 		for (int i = 0; i < thd_arr[(*idx) - 1]; i++)
 			sum2 += n->dat[i];
 		/* if psm-sum(n(1:thd_arr(idx-1)))  <  sum( n(1:thd_arr(idx)))-psm */
-		if (psm - sum < sum2 - psm) {
+		//if (psm - sum < sum2 - psm) {
+		if ((psm - sum < sum2 - psm) || (lenn - (thd_arr[(*idx) - 1])) <= 1) 
+		{
 			(*idx)--;
 		}
 	}

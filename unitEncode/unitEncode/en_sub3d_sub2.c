@@ -71,7 +71,7 @@ void en_sub3d_sub2(Int32_Dat* cf0, Uint8_Dat* sn, int maxcf0)
 	/* th=[cumprod(2*ones(1,11)); 3*cumprod([1 2*ones(1,10)])]; th=reshape(th,1,22); thd_arr=[1 th]; */
 	int thd_arr[24] = { 0, 1, 2, 3, 4, 6, 8,
 					  12, 16, 24, 32, 48, 64, 96, 128,
-					  192, 256, 384, 512, 768, 1024, 2048, 3072 };
+					  192, 256, 384, 512, 768, 1024,1536,2048, 3072 };
 	/* Nidx=length(thd_arr); */
 	Nidx = 23;
 	/* p=0.7; p1=0.7; p2=0.8; */

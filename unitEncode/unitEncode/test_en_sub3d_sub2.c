@@ -16,7 +16,7 @@ void test_en_sub3d_sub2()
 		unsigned short int a;
 		uchar b[4];
 	} rem;
-	int snLen = 8160;
+	int snLen = 510;
 	unsigned int *bigZ = (unsigned int *)calloc(snLen, sizeof(unsigned int));
 	FILE *fp = fopen("snCCC.txt", "rb");
 	fread(bigZ, sizeof( unsigned int), snLen, fp);
@@ -54,13 +54,13 @@ void test_en_sub3d_sub2()
 
 
 	Int32_Dat cf0;
-	cf0.len = 8160;
+	cf0.len = 510;
 	cf0.dat = (int*)calloc(cf0.len, sizeof(int));
 	fp = fopen("cf0CCC.txt", "rb");
 	fread(cf0.dat, sizeof(int), cf0.len, fp);
 	fclose(fp);
 
-	int maxcf0 = 1045;
+	int maxcf0 = 36191;
 	en_sub3d_sub2(&cf0, &sn, maxcf0);
 
 	//printf("\n%d %d %d\n", bin[639], bin[640], bin[641]);
