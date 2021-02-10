@@ -25,9 +25,9 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 		typ = 1;
 	}
 	en_r_cr(r, lB, nr, scr, scrc, pr, z);
-	FILE* fp = fopen("encodeZThd3.txt", "wb");
-	fwrite(bin, sizeof(unsigned char), (ptr / 8) + 1, fp);
-	fclose(fp);
+	//FILE* fp = fopen("encodeZThd3.txt", "wb");
+	//fwrite(bin, sizeof(unsigned char), (ptr / 8) + 1, fp);
+	//fclose(fp);
 	int thdh, thdq;
 	if (thd == 2)
 	{
@@ -1401,8 +1401,8 @@ void en_sub3d_sub2_sub(Uint8_Dat* z, Uint32_Dat* r, int lB, float pr, Uint32_Dat
 			{
 				//L3 = 1;
 				en_r_cr(&(crTest1.r), crTest1.lB, &(crTest1.nr), crTest1.sumcr, crTest1.sumcrc, crTest1.pr, &(crTest1.z));//bin_r3A
-				en_2n_code_new(&crTest.cf1, &crTest.nc1, typ, thdt);//bin31
-				en_2n_code_new(&crTest.cf2, &crTest.nc2, typ, thdt);//bin31
+				en_2n_code_new(&crTest1.cf1, &crTest1.nc1, typ, thdt);//bin31
+				en_2n_code_new(&crTest1.cf2, &crTest1.nc2, typ, thdt);//bin31
 				if (crTest2.sumcr > 12)
 				{
 					//L3 = 2;
