@@ -60,7 +60,7 @@ DEC de_zone_sub2(uchar *biny, int lastBit,int lenbinbit)
 	else
 	{
 		rk1.lenr = lenk1;
-		rk1.r = calloc(rk1.r, sizeof(unsigned int));
+		rk1.r = calloc(rk1.lenr, sizeof(unsigned int));
 		for(int i = 0; i < rk1.lenr;i++)
 		{ 
 			rk1.r[i] = 1;

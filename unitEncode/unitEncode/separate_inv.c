@@ -8,9 +8,10 @@ uint *separate_inv(uchar *sep, int *rw, int *rk, int len, int thd)
 {
    int i, t, t0;
    int pw = 0, pk = 0;
-   uint *r = (uint *)calloc(len, sizeof(uint));
-   int m,n;
 
+   uint *r = (uint *)calloc(len, sizeof(uint));
+   //uint *r = (uint *)malloc(len * sizeof(uint));
+   int m,n;
 
    for (i = 0; i < len; i++)
    {

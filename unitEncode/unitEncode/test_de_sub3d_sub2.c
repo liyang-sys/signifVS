@@ -13,9 +13,9 @@ void test_de_sub3d_sub2()
 		unsigned short int a;
 		uchar b[4];
 	} rem;
-	int zLen = 26510;
+	int zLen = 3414;
 	unsigned int *bigZ = (unsigned int *)calloc(zLen, sizeof(unsigned int));
-	FILE *fp = fopen("MBiny.txt", "rb");
+	FILE *fp = fopen("binM.txt", "rb");
 	fread(bigZ, sizeof(unsigned int), zLen, fp);
 	//for (int i = 0; i < zLen; i++)
 	//{
@@ -39,18 +39,19 @@ void test_de_sub3d_sub2()
 			z.dat[(indexZ >> 3) + 1] |= rem.b[0];
 			sumZ++;
 		}
-		if (i == 1590 || i == 1591 || i == 1592 || i == 1593)
-		{
-			printf("%d ", bigZ[i]);
-		}
+		//if (i == 1590 || i == 1591 || i == 1592 || i == 1593)
+		//{
+		//	printf("%d ", bigZ[i]);
+		//}
 		index++;
 		indexZ++;
 		index &= 7;
 
 	}
 	printf("\n-----------------------------------------------------------------------------------\n");
-	ptr = 6;
-	DE_S_SUB sub = de_sub3d_sub2(z.dat, 16384, 1, zLen);
+	ptr = 0;
+	int qctr = 1;
+	DE_S_SUB sub = de_sub3d_sub2(z.dat, 2040, qctr, zLen);
 	fp = fopen("cfC.txt", "wb");
 	fwrite(sub.cf.dat, sizeof(int), sub.cf.len, fp);
 	fclose(fp);
